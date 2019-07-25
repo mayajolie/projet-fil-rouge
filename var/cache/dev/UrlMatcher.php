@@ -8,6 +8,11 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/api/register' => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], null, ['POST' => 0], null, false, false, null]],
+        '/api/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'], null, ['POST' => 0], null, false, false, null]],
+        '/api/partenaires' => [[['_route' => 'partenaires', '_controller' => 'App\\Controller\\WariController::patenaires'], null, ['GET' => 0], null, false, false, null]],
+        '/api/ajout' => [[['_route' => 'ajout', '_controller' => 'App\\Controller\\WariController::AjoutP'], null, ['POST' => 0], null, false, false, null]],
+        '/api/logincheck' => [[['_route' => 'api_login_check'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
