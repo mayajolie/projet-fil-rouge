@@ -8,6 +8,8 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/api/partenaires' => [[['_route' => 'find_partenaires', '_controller' => 'App\\Controller\\WariController::index'], null, ['GET' => 0], null, false, false, null]],
+        '/api/partenaire' => [[['_route' => 'add_partenaire', '_controller' => 'App\\Controller\\WariController::addPartenaire'], null, ['POST' => 0], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
