@@ -29,7 +29,14 @@ class SecurityController extends AbstractController
             $user = new User();
             $user->setUsername($values->username);
             $user->setPassword($passwordEncoder->encodePassword($user, $values->password));
-            $user->setRoles($user->getRoles());
+            $user->setRoles(['ROLE_ADMIN']);
+
+            if(count($errors)) {
+                $errors = $serializer->serialize($errors, 'json');
+                return new Response($errors, 500, [
+                    'Content-Type' => 'application/json'
+                ]);
+            }
             $entityManager->persist($user);
             $entityManager->flush();
 
@@ -48,7 +55,7 @@ class SecurityController extends AbstractController
         return new JsonResponse($data, 500);
     }
       /**
-     * @Route("/login", name="login", methods={"POST"})
+     * @Route("/loginchek", name="login", methods={"POST","GET"})
      */
     public function login(Request $request)
     {

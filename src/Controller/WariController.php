@@ -33,13 +33,13 @@ class WariController extends FOSRestController
     public function AjoutP(Request $request, EntityManagerInterface $entityManager)
     {
         $values = json_decode($request->getContent());
-        if(isset($values->raisonSocial,$values->ninea,$values->adresse,$values->telephone,$values->codeP)) {
+        if(isset($values->raisonSocial,$values->ninea,$values->adresse,$values->telephone)) {
             $partenaire = new Partenaires();
             $partenaire->setRaisonSocial($values->raisonSocial);
             $partenaire->setNinea($values->ninea);
             $partenaire->setAdresse($values->adresse);
             $partenaire->setTelephone($values->telephone);
-            $partenaire->setCodeP($values->codeP);
+            
             
             $entityManager->persist($partenaire);
             $entityManager->flush();

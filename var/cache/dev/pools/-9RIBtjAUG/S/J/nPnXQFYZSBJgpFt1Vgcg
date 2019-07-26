@@ -9,6 +9,7 @@
             'ApiPlatform\\Core\\Metadata\\Resource\\ResourceNameCollection' => [
                 'classes' => [
                     [
+                        'App\\Entity\\CompteBancaire',
                         'App\\Entity\\Partenaires',
                     ],
                 ],
