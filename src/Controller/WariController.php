@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Entity\Partenaires;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 
 /**
  * @Route("/api")
@@ -30,15 +31,9 @@ class WariController extends FOSRestController
       /**
      * @Route("/ajout", name="ajout", methods={"POST"})
      */
-    public function AjoutP(Request $request, EntityManagerInterface $entityManager)
-    {
-        $values = json_decode($request->getContent());
-        if(isset($values->raisonSocial,$values->ninea,$values->adresse,$values->telephone)) {
-            $partenaire = new Partenaires();
-            $partenaire->setRaisonSocial($values->raisonSocial);
-            $partenaire->setNinea($values->ninea);
-            $partenaire->setAdresse($values->adresse);
-            $partenaire->setTelephone($values->telephone);
+        public function AjoutP(Request $request, SerializerInterface $serializer, EntityManagerInterface $entityManager)
+        {
+          $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
             
             
             $entityManager->persist($partenaire);
@@ -51,11 +46,31 @@ class WariController extends FOSRestController
             ];
 
             return new JsonResponse($data, 201);
-        }
+        
         $data =[
             'status' => 500,
             'message' => 'Vous devez renseigner les clés username et password'
         ];
         return new JsonResponse($data, 500);
     }
+
+    /**
+     * @Route("/bloquer", name="aj", methods={"POST"})
+     */
+public function update($id)
+{
+    $entityManager = $this->getDoctrine()->getManager();
+    $etat = $entityManager->getRepository(Partenaires::class)->find($id);
+
+    if (!$etat) {
+        throw $this->createNotFoundException(
+            'No product found for id '.$id
+        );
+    }
+
+    $etat->setEtat('debloquer');
+    $entityManager->flush();
+
+}
+
 }
