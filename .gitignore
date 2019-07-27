@@ -5,7 +5,11 @@
 ### /.env.*.local ###
 ### /public/bundles/ ###
  /var/ 
+<<<<<<< HEAD
 /vendor/
+=======
+ /vendor/ 
+>>>>>>> a0fce9984d21f64078fc9e35847779310eeb4984
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###
