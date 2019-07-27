@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -39,9 +41,19 @@ class Partenaires
     private $telephone;
 
     /**
+     * @ORM\OneToMany(targetEntity="App\Entity\CompteBancaire", mappedBy="partenaire")
+     */
+    private $compteBancaires;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $codeP;
+    private $etat;
+
+    public function __construct()
+    {
+        $this->compteBancaires = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -96,14 +108,45 @@ class Partenaires
         return $this;
     }
 
-    public function getCodeP(): ?string
+    /**
+     * @return Collection|CompteBancaire[]
+     */
+    public function getCompteBancaires(): Collection
     {
-        return $this->codeP;
+        return $this->compteBancaires;
     }
 
-    public function setCodeP(string $codeP): self
+    public function addCompteBancaire(CompteBancaire $compteBancaire): self
     {
-        $this->codeP = $codeP;
+        if (!$this->compteBancaires->contains($compteBancaire)) {
+            $this->compteBancaires[] = $compteBancaire;
+            $compteBancaire->setPartenaire($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCompteBancaire(CompteBancaire $compteBancaire): self
+    {
+        if ($this->compteBancaires->contains($compteBancaire)) {
+            $this->compteBancaires->removeElement($compteBancaire);
+            // set the owning side to null (unless already changed)
+            if ($compteBancaire->getPartenaire() === $this) {
+                $compteBancaire->setPartenaire(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getEtat(): ?string
+    {
+        return $this->etat;
+    }
+
+    public function setEtat(string $etat): self
+    {
+        $this->etat = $etat;
 
         return $this;
     }

@@ -14,7 +14,7 @@
                         'ninea',
                         'adresse',
                         'telephone',
-                        'codeP',
+                        'compteBancaires',
                     ],
                 ],
             ],

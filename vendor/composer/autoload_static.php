@@ -103,6 +103,12 @@ class ComposerStaticInit98993a4789219422ea2d33ba0ca2607c
         array (
             'Nelmio\\CorsBundle\\' => 18,
             'Negotiation\\' => 12,
+            'Namshi\\JOSE\\' => 12,
+        ),
+        'L' => 
+        array (
+            'Lexik\\Bundle\\JWTAuthenticationBundle\\' => 37,
+            'Lcobucci\\JWT\\' => 13,
         ),
         'F' => 
         array (
@@ -403,6 +409,18 @@ class ComposerStaticInit98993a4789219422ea2d33ba0ca2607c
         'Negotiation\\' => 
         array (
             0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
+        ),
+        'Namshi\\JOSE\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE',
+        ),
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle',
+        ),
+        'Lcobucci\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
         ),
         'Fig\\Link\\' => 
         array (

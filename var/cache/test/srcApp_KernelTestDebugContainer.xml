@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
+<<<<<<< HEAD
     <parameter key="kernel.root_dir">/home/cheikhgaye/projet-fil-rouge/src</parameter>
     <parameter key="kernel.project_dir">/home/cheikhgaye/projet-fil-rouge</parameter>
     <parameter key="kernel.environment">test</parameter>
@@ -8,6 +9,15 @@
     <parameter key="kernel.name">src</parameter>
     <parameter key="kernel.cache_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/test</parameter>
     <parameter key="kernel.logs_dir">/home/cheikhgaye/projet-fil-rouge/var/log</parameter>
+=======
+    <parameter key="kernel.root_dir">/home/mariama/projetwari/src</parameter>
+    <parameter key="kernel.project_dir">/home/mariama/projetwari</parameter>
+    <parameter key="kernel.environment">test</parameter>
+    <parameter key="kernel.debug">true</parameter>
+    <parameter key="kernel.name">src</parameter>
+    <parameter key="kernel.cache_dir">/home/mariama/projetwari/var/cache/test</parameter>
+    <parameter key="kernel.logs_dir">/home/mariama/projetwari/var/log</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
@@ -19,6 +29,7 @@
       <parameter key="DoctrineMigrationsBundle">Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle</parameter>
       <parameter key="FOSRestBundle">FOS\RestBundle\FOSRestBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
+<<<<<<< HEAD
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -61,6 +72,55 @@
         <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/sensio/framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
+=======
+      <parameter key="LexikJWTAuthenticationBundle">Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle</parameter>
+    </parameter>
+    <parameter key="kernel.bundles_metadata" type="collection">
+      <parameter key="FrameworkBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/symfony/framework-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
+      </parameter>
+      <parameter key="TwigBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/symfony/twig-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
+      </parameter>
+      <parameter key="SecurityBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/symfony/security-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
+      </parameter>
+      <parameter key="NelmioCorsBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/nelmio/cors-bundle</parameter>
+        <parameter key="namespace">Nelmio\CorsBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineCacheBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/doctrine/doctrine-cache-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
+      </parameter>
+      <parameter key="ApiPlatformBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/api-platform/core/src/Bridge/Symfony/Bundle</parameter>
+        <parameter key="namespace">ApiPlatform\Core\Bridge\Symfony\Bundle</parameter>
+      </parameter>
+      <parameter key="DoctrineMigrationsBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
+      </parameter>
+      <parameter key="FOSRestBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/friendsofsymfony/rest-bundle</parameter>
+        <parameter key="namespace">FOS\RestBundle</parameter>
+      </parameter>
+      <parameter key="SensioFrameworkExtraBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
+      </parameter>
+      <parameter key="LexikJWTAuthenticationBundle" type="collection">
+        <parameter key="path">/home/mariama/projetwari/vendor/lexik/jwt-authentication-bundle</parameter>
+        <parameter key="namespace">Lexik\Bundle\JWTAuthenticationBundle</parameter>
+      </parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">srcApp_KernelTestDebugContainer</parameter>
@@ -82,18 +142,30 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
+<<<<<<< HEAD
     <parameter key="session.save_path">/home/cheikhgaye/projet-fil-rouge/var/cache/test/sessions</parameter>
+=======
+    <parameter key="session.save_path">/home/mariama/projetwari/var/cache/test/sessions</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
+<<<<<<< HEAD
     <parameter key="validator.mapping.cache.file">/home/cheikhgaye/projet-fil-rouge/var/cache/test/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.container.dump">/home/cheikhgaye/projet-fil-rouge/var/cache/test/srcApp_KernelTestDebugContainer.xml</parameter>
+=======
+    <parameter key="validator.mapping.cache.file">/home/mariama/projetwari/var/cache/test/validation.php</parameter>
+    <parameter key="validator.translation_domain">validators</parameter>
+    <parameter key="data_collector.templates" type="collection"/>
+    <parameter key="debug.error_handler.throw_at">-1</parameter>
+    <parameter key="debug.container.dump">/home/mariama/projetwari/var/cache/test/srcApp_KernelTestDebugContainer.xml</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -101,13 +173,21 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelTestDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
+<<<<<<< HEAD
     <parameter key="serializer.mapping.cache.file">/home/cheikhgaye/projet-fil-rouge/var/cache/test/serialization.php</parameter>
+=======
+    <parameter key="serializer.mapping.cache.file">/home/mariama/projetwari/var/cache/test/serialization.php</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="twig.exception_listener.controller">twig.controller.exception::showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
+<<<<<<< HEAD
     <parameter key="twig.default_path">/home/cheikhgaye/projet-fil-rouge/templates</parameter>
+=======
+    <parameter key="twig.default_path">/home/mariama/projetwari/templates</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="security.authentication.trust_resolver.anonymous_class">null</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">null</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -254,7 +334,11 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
+<<<<<<< HEAD
     <parameter key="doctrine.orm.proxy_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/test/doctrine/orm/Proxies</parameter>
+=======
+    <parameter key="doctrine.orm.proxy_dir">/home/mariama/projetwari/var/cache/test/doctrine/orm/Proxies</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="api_platform.enable_entrypoint">true</parameter>
     <parameter key="api_platform.enable_docs">true</parameter>
@@ -326,7 +410,11 @@
     </parameter>
     <parameter key="api_platform.http_cache.public">null</parameter>
     <parameter key="api_platform.resource_class_directories" type="collection">
+<<<<<<< HEAD
       <parameter>/home/cheikhgaye/projet-fil-rouge/src/Entity</parameter>
+=======
+      <parameter>/home/mariama/projetwari/src/Entity</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </parameter>
     <parameter key="api_platform.oauth.enabled">false</parameter>
     <parameter key="api_platform.oauth.clientId"></parameter>
@@ -343,7 +431,11 @@
     <parameter key="api_platform.graphql.enabled">false</parameter>
     <parameter key="api_platform.validator.serialize_payload_fields" type="collection"/>
     <parameter key="api_platform.elasticsearch.enabled">false</parameter>
+<<<<<<< HEAD
     <parameter key="doctrine_migrations.dir_name">/home/cheikhgaye/projet-fil-rouge/src/Migrations</parameter>
+=======
+    <parameter key="doctrine_migrations.dir_name">/home/mariama/projetwari/src/Migrations</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -354,6 +446,16 @@
     <parameter key="doctrine_migrations.custom_template">null</parameter>
     <parameter key="doctrine_migrations.organize_migrations">false</parameter>
     <parameter key="fos_rest.format_listener.rules">null</parameter>
+<<<<<<< HEAD
+=======
+    <parameter key="lexik_jwt_authentication.pass_phrase">%env(JWT_PASSPHRASE)%</parameter>
+    <parameter key="lexik_jwt_authentication.token_ttl">3600</parameter>
+    <parameter key="lexik_jwt_authentication.clock_skew">0</parameter>
+    <parameter key="lexik_jwt_authentication.user_identity_field">username</parameter>
+    <parameter key="lexik_jwt_authentication.user_id_claim">username</parameter>
+    <parameter key="lexik_jwt_authentication.encoder.signature_algorithm">RS256</parameter>
+    <parameter key="lexik_jwt_authentication.encoder.crypto_engine">openssl</parameter>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <parameter key="console.command.ids" type="collection">
       <parameter>console.command.public_alias.doctrine_cache.contains_command</parameter>
       <parameter>console.command.public_alias.doctrine_cache.delete_command</parameter>
@@ -374,16 +476,39 @@
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
+<<<<<<< HEAD
     <service id="App\Controller\WariController" class="App\Controller\WariController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
     <service id="App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
+=======
+    <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\SecurityController"/>
+      </call>
+    </service>
+    <service id="App\Controller\WariController" class="App\Controller\WariController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\WariController"/>
+      </call>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+<<<<<<< HEAD
+=======
+    <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -438,7 +563,11 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/srcApp_KernelTestDebugContainerDeprecations.log</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/srcApp_KernelTestDebugContainerDeprecations.log</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -447,9 +576,15 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/src/Resources</argument>
       <argument type="collection">
         <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
+=======
+      <argument>/home/mariama/projetwari/src/Resources</argument>
+      <argument type="collection">
+        <argument>/home/mariama/projetwari/src</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -515,7 +650,11 @@
     <service id="console.command.assets_install" class="Symfony\Bundle\FrameworkBundle\Command\AssetsInstallCommand" public="false">
       <tag name="console.command" command="assets:install"/>
       <argument type="service" id="filesystem"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -636,11 +775,17 @@
       <argument type="service" id="form.registry"/>
       <argument type="collection">
         <argument>Symfony\Component\Form\Extension\Core\Type</argument>
+<<<<<<< HEAD
         <argument>App\Form</argument>
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
         <argument>App\Form\PartenaireType</argument>
+=======
+        <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
+      </argument>
+      <argument type="collection">
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -665,9 +810,15 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>aHnpDg+3UA</argument>
       <argument>0</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>bLEDtJJKI+</argument>
+      <argument>0</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -682,54 +833,95 @@
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>B2iuWFz6xF</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>caBdpAW3G3</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>Y14lX7a-sX</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>xSWvP+vj2T</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>QhN6lLBY3p</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>tFJhnpAXis</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>FKKgUart3O</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>k+ZbYKbrNA</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>6LtZ7Hyv9c</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>HHU6dYcVGZ</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>lTbhXZ0um2</argument>
       <argument>0</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>K4HPqTubP7</argument>
+      <argument>0</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -741,7 +933,11 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -770,7 +966,11 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -910,8 +1110,13 @@
         <argument key="ApiPlatform\Core\Security\ResourceAccessCheckerInterface" type="service" id="api_platform.security.resource_access_checker" on-invalid="ignore_uninitialized"/>
         <argument key="ApiPlatform\Core\Serializer\SerializerContextBuilderInterface" type="service" id="api_platform.serializer.context_builder.filter" on-invalid="ignore_uninitialized"/>
         <argument key="ApiPlatform\Core\Validator\ValidatorInterface" type="service" id="api_platform.validator" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
         <argument key="App\Form\PartenaireType" type="service" id="App\Form\PartenaireType" on-invalid="ignore_uninitialized"/>
         <argument key="App\Repository\PartenairesRepository" type="service" id="App\Repository\PartenairesRepository" on-invalid="ignore_uninitialized"/>
+=======
+        <argument key="App\Repository\PartenairesRepository" type="service" id="App\Repository\PartenairesRepository" on-invalid="ignore_uninitialized"/>
+        <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="Doctrine\Common\Annotations\Reader" type="service" id="annotations.cached_reader" on-invalid="ignore_uninitialized"/>
         <argument key="Doctrine\Common\Persistence\ManagerRegistry" type="service" id="doctrine" on-invalid="ignore_uninitialized"/>
         <argument key="Doctrine\Common\Persistence\ObjectManager" type="service" id="doctrine.orm.default_entity_manager" on-invalid="ignore_uninitialized"/>
@@ -920,6 +1125,16 @@
         <argument key="Doctrine\ORM\EntityManagerInterface" type="service" id="doctrine.orm.default_entity_manager" on-invalid="ignore_uninitialized"/>
         <argument key="FOS\RestBundle\Request\ParamFetcherInterface" type="service" id="fos_rest.request.param_fetcher" on-invalid="ignore_uninitialized"/>
         <argument key="FOS\RestBundle\View\ViewHandlerInterface" type="service" id="fos_rest.view_handler.default" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
+=======
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" type="service" id="lexik_jwt_authentication.encoder.lcobucci" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationFailureHandler" type="service" id="lexik_jwt_authentication.handler.authentication_failure" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationSuccessHandler" type="service" id="lexik_jwt_authentication.handler.authentication_success" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\JWSProviderInterface" type="service" id="lexik_jwt_authentication.jws_provider.lcobucci" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenInterface" type="service" id="lexik_jwt_authentication.jwt_manager" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface" type="service" id="lexik_jwt_authentication.jwt_manager" on-invalid="ignore_uninitialized"/>
+        <argument key="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\TokenExtractorInterface" type="service" id="lexik_jwt_authentication.extractor.chain_extractor" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="Psr\Cache\CacheItemPoolInterface" type="service" id="cache.app" on-invalid="ignore_uninitialized"/>
         <argument key="Psr\Container\ContainerInterface" type="service" id="service_container" on-invalid="ignore_uninitialized"/>
         <argument key="Psr\Container\ContainerInterface $parameterBag" type="service" id="parameter_bag" on-invalid="ignore_uninitialized"/>
@@ -967,7 +1182,11 @@
         <argument key="Symfony\Component\Security\Core\Role\RoleHierarchyInterface" type="service" id="security.role_hierarchy" on-invalid="ignore_uninitialized"/>
         <argument key="Symfony\Component\Security\Core\Security" type="service" id="security.helper" on-invalid="ignore_uninitialized"/>
         <argument key="Symfony\Component\Security\Core\User\UserCheckerInterface" type="service" id="security.user_checker" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
         <argument key="Symfony\Component\Security\Core\User\UserProviderInterface" type="service" id="security.user.provider.concrete.in_memory" on-invalid="ignore_uninitialized"/>
+=======
+        <argument key="Symfony\Component\Security\Core\User\UserProviderInterface" type="service" id="security.user.provider.concrete.app_user_provider" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="Symfony\Component\Security\Csrf\CsrfTokenManagerInterface" type="service" id="security.csrf.token_manager" on-invalid="ignore_uninitialized"/>
         <argument key="Symfony\Component\Security\Csrf\TokenGenerator\TokenGeneratorInterface" type="service" id="security.csrf.token_generator" on-invalid="ignore_uninitialized"/>
         <argument key="Symfony\Component\Security\Csrf\TokenStorage\TokenStorageInterface" type="service" id="security.csrf.token_storage" on-invalid="ignore_uninitialized"/>
@@ -1158,7 +1377,11 @@
         <argument key="api_platform.validator" type="service" id="api_platform.validator" on-invalid="ignore_uninitialized"/>
         <argument key="argument_metadata_factory" type="service" id="argument_metadata_factory" on-invalid="ignore_uninitialized"/>
         <argument key="argument_resolver" type="service" id="debug.argument_resolver" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
         <argument key="argument_resolver.controller_locator" type="service" id=".service_locator.KhFsRJO" on-invalid="ignore_uninitialized"/>
+=======
+        <argument key="argument_resolver.controller_locator" type="service" id=".service_locator.1rHl9KC" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="argument_resolver.default" type="service" id="debug.argument_resolver.default" on-invalid="ignore_uninitialized"/>
         <argument key="argument_resolver.not_tagged_controller" type="service" id="debug.argument_resolver.not_tagged_controller" on-invalid="ignore_uninitialized"/>
         <argument key="argument_resolver.request" type="service" id="debug.argument_resolver.request" on-invalid="ignore_uninitialized"/>
@@ -1372,6 +1595,27 @@
         <argument key="framework_extra_bundle.argument_name_convertor" type="service" id="framework_extra_bundle.argument_name_convertor" on-invalid="ignore_uninitialized"/>
         <argument key="framework_extra_bundle.date_time_param_converter" type="service" id="framework_extra_bundle.date_time_param_converter" on-invalid="ignore_uninitialized"/>
         <argument key="framework_extra_bundle.event.is_granted" type="service" id="framework_extra_bundle.event.is_granted" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
+=======
+        <argument key="lexik_jwt_authentication.encoder.default" type="service" id="lexik_jwt_authentication.encoder.default" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.encoder.lcobucci" type="service" id="lexik_jwt_authentication.encoder.lcobucci" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.extractor.authorization_header_extractor" type="service" id="lexik_jwt_authentication.extractor.authorization_header_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.extractor.chain_extractor" type="service" id="lexik_jwt_authentication.extractor.chain_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.extractor.cookie_extractor" type="service" id="lexik_jwt_authentication.extractor.cookie_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.extractor.query_parameter_extractor" type="service" id="lexik_jwt_authentication.extractor.query_parameter_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.handler.authentication_failure" type="service" id="lexik_jwt_authentication.handler.authentication_failure" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.handler.authentication_success" type="service" id="lexik_jwt_authentication.handler.authentication_success" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.jws_provider.default" type="service" id="lexik_jwt_authentication.jws_provider.default" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.jws_provider.lcobucci" type="service" id="lexik_jwt_authentication.jws_provider.lcobucci" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.jwt_token_authenticator" type="service" id="lexik_jwt_authentication.security.guard.jwt_token_authenticator" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.key_loader.openssl" type="service" id="lexik_jwt_authentication.key_loader.openssl" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.key_loader.raw" type="service" id="lexik_jwt_authentication.key_loader.raw" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.security.authentication.entry_point" type="service" id="lexik_jwt_authentication.security.authentication.entry_point" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.security.authentication.listener" type="service" id="lexik_jwt_authentication.security.authentication.listener" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.security.authentication.provider" type="service" id="lexik_jwt_authentication.security.authentication.provider" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.security.guard.jwt_token_authenticator" type="service" id="lexik_jwt_authentication.security.guard.jwt_token_authenticator" on-invalid="ignore_uninitialized"/>
+        <argument key="lexik_jwt_authentication.security.jwt_user_provider" type="service" id="lexik_jwt_authentication.security.jwt_user_provider" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="locale_listener" type="service" id="locale_listener" on-invalid="ignore_uninitialized"/>
         <argument key="logger" type="service" id="logger" on-invalid="ignore_uninitialized"/>
         <argument key="mime_types" type="service" id="mime_types" on-invalid="ignore_uninitialized"/>
@@ -1411,9 +1655,17 @@
         <argument key="security.authentication.guard_handler" type="service" id="security.authentication.guard_handler" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.anonymous" type="service" id="security.authentication.listener.anonymous" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.anonymous.main" type="service" id="security.authentication.listener.anonymous.main" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
         <argument key="security.authentication.manager" type="service" id="security.authentication.manager" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.anonymous" type="service" id="security.authentication.provider.anonymous" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.anonymous.main" type="service" id="security.authentication.provider.anonymous.main" on-invalid="ignore_uninitialized"/>
+=======
+        <argument key="security.authentication.listener.json.main" type="service" id="security.authentication.listener.json.main" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.manager" type="service" id="security.authentication.manager" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.provider.anonymous" type="service" id="security.authentication.provider.anonymous" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.provider.anonymous.main" type="service" id="security.authentication.provider.anonymous.main" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.provider.dao.main" type="service" id="security.authentication.provider.dao.main" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="security.authentication.retry_entry_point" type="service" id="security.authentication.retry_entry_point" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.session_strategy" type="service" id="security.authentication.session_strategy" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.session_strategy.main" type="service" id="security.authentication.session_strategy" on-invalid="ignore_uninitialized"/>
@@ -1443,7 +1695,11 @@
         <argument key="security.rememberme.response_listener" type="service" id="security.rememberme.response_listener" on-invalid="ignore_uninitialized"/>
         <argument key="security.rememberme.token.provider.in_memory" type="service" id="security.rememberme.token.provider.in_memory" on-invalid="ignore_uninitialized"/>
         <argument key="security.role_hierarchy" type="service" id="security.role_hierarchy" on-invalid="ignore_uninitialized"/>
+<<<<<<< HEAD
         <argument key="security.user.provider.concrete.in_memory" type="service" id="security.user.provider.concrete.in_memory" on-invalid="ignore_uninitialized"/>
+=======
+        <argument key="security.user.provider.concrete.app_user_provider" type="service" id="security.user.provider.concrete.app_user_provider" on-invalid="ignore_uninitialized"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="security.user_checker" type="service" id="security.user_checker" on-invalid="ignore_uninitialized"/>
         <argument key="security.user_checker.main" type="service" id="security.user_checker" on-invalid="ignore_uninitialized"/>
         <argument key="security.user_password_encoder.generic" type="service" id="security.user_password_encoder.generic" on-invalid="ignore_uninitialized"/>
@@ -1545,8 +1801,13 @@
         <argument key="web_link.add_link_header_listener" type="service" id="web_link.add_link_header_listener" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
+<<<<<<< HEAD
     <service id=".1_NativeFileSessionHandler~6Wc_VnE" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/sessions</argument>
+=======
+    <service id=".1_NativeFileSessionHandler~9t6U38l" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>/home/mariama/projetwari/var/cache/test/sessions</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.mock_file"/>
@@ -1569,12 +1830,20 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/sessions</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/sessions</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".1_NativeFileSessionHandler~6Wc_VnE"/>
+=======
+      <argument type="service" id=".1_NativeFileSessionHandler~9t6U38l"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1613,7 +1882,11 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.hKwafza"/>
+=======
+      <argument type="service" id=".service_locator.Fck5jT9"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -1726,8 +1999,13 @@
       <argument type="service" id="assets.empty_version_strategy"/>
       <argument type="service" id="assets.context"/>
     </service>
+<<<<<<< HEAD
     <service id=".1_PhpArrayAdapter~Dp2IZ5X" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/validation.php</argument>
+=======
+    <service id=".1_PhpArrayAdapter~MTwkxlV" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/mariama/projetwari/var/cache/test/validation.php</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1743,7 +2021,11 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
+<<<<<<< HEAD
           <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/form/Resources/config/validation.xml</argument>
+=======
+          <argument>/home/mariama/projetwari/vendor/symfony/form/Resources/config/validation.xml</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1765,10 +2047,17 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
       <argument type="service" id=".1_PhpArrayAdapter~Dp2IZ5X"/>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/validation.php</argument>
+    </service>
+    <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
+      <argument type="service" id=".1_PhpArrayAdapter~MTwkxlV"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory" public="false">
       <argument type="service" id=".service_locator.LtnrEkg"/>
@@ -2387,7 +2676,11 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="cache_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/test</argument>
+=======
+        <argument key="cache_dir">/home/mariama/projetwari/var/cache/test</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2426,7 +2719,11 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2452,12 +2749,21 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
+<<<<<<< HEAD
     <service id=".2_PhpArrayAdapter~WFUzLbO" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
     <service id=".1_ArrayCache~WFUzLbO" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+=======
+    <service id=".2_PhpArrayAdapter~0ge7CB9" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/mariama/projetwari/var/cache/test/annotations.php</argument>
+      <argument type="service" id="cache.annotations"/>
+      <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
+    </service>
+    <service id=".1_ArrayCache~0ge7CB9" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -2472,7 +2778,11 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
       <argument type="service" id=".1_ArrayCache~WFUzLbO"/>
+=======
+      <argument type="service" id=".1_ArrayCache~0ge7CB9"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -2482,12 +2792,20 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/annotations.php</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/annotations.php</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".2_PhpArrayAdapter~WFUzLbO"/>
+=======
+      <argument type="service" id=".2_PhpArrayAdapter~0ge7CB9"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor" public="false">
       <argument>false</argument>
@@ -2583,10 +2901,17 @@
           </service>
         </argument>
       </argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/serialization.php</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache/test/serialization.php</argument>
+    </service>
+    <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
+      <argument>/home/mariama/projetwari/var/cache/test/serialization.php</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2654,7 +2979,11 @@
     <service id="twig" class="Twig\Environment" public="true">
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="default_path">/home/cheikhgaye/projet-fil-rouge/templates</argument>
+=======
+        <argument key="default_path">/home/mariama/projetwari/templates</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="exception_controller">twig.controller.exception::showAction</argument>
@@ -2662,7 +2991,11 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
+<<<<<<< HEAD
         <argument key="cache">/home/cheikhgaye/projet-fil-rouge/var/cache/test/twig</argument>
+=======
+        <argument key="cache">/home/mariama/projetwari/var/cache/test/twig</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2756,16 +3089,28 @@
       <argument type="service" id=".service_locator.lSIKWsr.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+=======
+        <argument key="/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
       <argument type="collection">
         <argument key="/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
+=======
+      <argument>/home/mariama/projetwari/src</argument>
+      <argument type="collection">
+        <argument key="/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+      </argument>
+      <argument>/home/mariama/projetwari/templates</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -2776,6 +3121,7 @@
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
       <call method="addPath">
         <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views</argument>
@@ -2822,6 +3168,54 @@
       </call>
       <call method="addPath">
         <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>!Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>!Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>!Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>!Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>!ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/templates</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -2847,7 +3241,11 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -2928,10 +3326,17 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
       <argument>%kernel.bundles_metadata%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+      <argument>%kernel.bundles_metadata%</argument>
+      <argument>/home/mariama/projetwari/templates</argument>
+      <argument>/home/mariama/projetwari/src</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -2958,6 +3363,10 @@
     </service>
     <service id="security.authentication.manager" class="Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager" public="false">
       <argument type="iterator">
+<<<<<<< HEAD
+=======
+        <argument type="service" id="security.authentication.provider.dao.main"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument type="service" id="security.authentication.provider.anonymous.main"/>
       </argument>
       <argument>true</argument>
@@ -2976,7 +3385,24 @@
       <argument>none</argument>
     </service>
     <service id="security.encoder_factory.generic" class="Symfony\Component\Security\Core\Encoder\EncoderFactory" public="false">
+<<<<<<< HEAD
       <argument type="collection"/>
+=======
+      <argument type="collection">
+        <argument key="App\Entity\User" type="collection">
+          <argument key="algorithm">auto</argument>
+          <argument key="hash_algorithm">sha512</argument>
+          <argument key="key_length">40</argument>
+          <argument key="ignore_case">false</argument>
+          <argument key="encode_as_base64">true</argument>
+          <argument key="iterations">5000</argument>
+          <argument key="cost">null</argument>
+          <argument key="memory_cost">null</argument>
+          <argument key="time_cost">null</argument>
+          <argument key="threads">null</argument>
+        </argument>
+      </argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="security.user_password_encoder.generic" class="Symfony\Component\Security\Core\Encoder\UserPasswordEncoder" public="false">
       <argument type="service" id="security.encoder_factory.generic"/>
@@ -3068,10 +3494,17 @@
     </service>
     <service id="cache.security_expression_language" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>N8ipnKtX7X</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>3I8HIvev34</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -3101,7 +3534,11 @@
       <tag name="monolog.logger" channel="security"/>
       <argument type="service" id="security.token_storage"/>
       <argument type="iterator">
+<<<<<<< HEAD
         <argument type="service" id="security.user.provider.concrete.in_memory"/>
+=======
+        <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
       <argument></argument>
       <argument type="service" id="logger" on-invalid="null"/>
@@ -3406,8 +3843,16 @@
       <argument type="service" id="debug.event_dispatcher"/>
       <argument type="service" id="security.logout_url_generator"/>
     </service>
+<<<<<<< HEAD
     <service id="security.user.provider.concrete.in_memory" class="Symfony\Component\Security\Core\User\InMemoryUserProvider" public="false">
       <argument type="collection"/>
+=======
+    <service id="security.user.provider.concrete.app_user_provider" class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider" public="false">
+      <argument type="service" id="doctrine"/>
+      <argument>App\Entity\User</argument>
+      <argument>username</argument>
+      <argument>null</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="security.firewall.map.config.dev" class="Symfony\Bundle\SecurityBundle\Security\FirewallConfig" public="false">
       <argument>dev</argument>
@@ -3438,12 +3883,20 @@
       <argument>null</argument>
       <argument>true</argument>
       <argument>false</argument>
+<<<<<<< HEAD
       <argument>security.user.provider.concrete.in_memory</argument>
+=======
+      <argument>security.user.provider.concrete.app_user_provider</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument>main</argument>
       <argument>null</argument>
       <argument>null</argument>
       <argument>null</argument>
       <argument type="collection">
+<<<<<<< HEAD
+=======
+        <argument>json_login</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument>anonymous</argument>
       </argument>
       <argument>null</argument>
@@ -3451,13 +3904,48 @@
     <service id="security.context_listener.0" class="Symfony\Component\Security\Http\Firewall\ContextListener" public="false">
       <argument type="service" id="security.token_storage"/>
       <argument type="iterator">
+<<<<<<< HEAD
         <argument type="service" id="security.user.provider.concrete.in_memory"/>
+=======
+        <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
       <argument>main</argument>
       <argument type="service" id="logger" on-invalid="null"/>
       <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
       <argument type="service" id="security.authentication.trust_resolver"/>
     </service>
+<<<<<<< HEAD
+=======
+    <service id="security.authentication.provider.dao.main" class="Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider" public="false">
+      <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+      <argument type="service" id="security.user_checker"/>
+      <argument>main</argument>
+      <argument type="service" id="security.encoder_factory.generic"/>
+      <argument>true</argument>
+    </service>
+    <service id="security.authentication.listener.json.main" class="Symfony\Component\Security\Http\Firewall\UsernamePasswordJsonAuthenticationListener" public="false">
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="security.authentication.manager"/>
+      <argument type="service" id="security.http_utils"/>
+      <argument>main</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+      <argument type="collection">
+        <argument key="check_path">/api/login</argument>
+        <argument key="use_forward">false</argument>
+        <argument key="require_previous_session">false</argument>
+        <argument key="username_path">username</argument>
+        <argument key="password_path">password</argument>
+      </argument>
+      <argument type="service" id="logger" on-invalid="null"/>
+      <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
+      <argument type="service" id="property_accessor" on-invalid="null"/>
+      <call method="setSessionAuthenticationStrategy">
+        <argument type="service" id="security.authentication.session_strategy"/>
+      </call>
+    </service>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id="security.authentication.listener.anonymous.main" class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
       <argument type="service" id="security.token_storage"/>
       <argument>%container.build_hash%</argument>
@@ -3482,6 +3970,10 @@
       <argument type="iterator">
         <argument type="service" id="security.channel_listener"/>
         <argument type="service" id="security.context_listener.0"/>
+<<<<<<< HEAD
+=======
+        <argument type="service" id="security.authentication.listener.json.main"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument type="service" id="security.authentication.listener.anonymous.main"/>
         <argument type="service" id="security.access_listener"/>
       </argument>
@@ -3499,7 +3991,13 @@
     <service id="security.command.user_password_encoder" class="Symfony\Bundle\SecurityBundle\Command\UserPasswordEncoderCommand" public="false">
       <tag name="console.command" command="security:encode-password"/>
       <argument type="service" id="security.encoder_factory.generic"/>
+<<<<<<< HEAD
       <argument type="collection"/>
+=======
+      <argument type="collection">
+        <argument>App\Entity\User</argument>
+      </argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <call method="setName">
         <argument>security:encode-password</argument>
       </call>
@@ -3662,7 +4160,11 @@
       <argument type="collection"/>
       <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
     </service>
+<<<<<<< HEAD
     <service id=".1_ServiceLocator~pcKsjta" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+=======
+    <service id=".1_ServiceLocator~FUFVASJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer" public="false">
@@ -3683,7 +4185,11 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.im2pOIF"/>
+=======
+      <argument type="service" id=".service_locator.Md1IYBl"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -3822,7 +4328,11 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
+<<<<<<< HEAD
         <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/doctrine/orm/Proxies</argument>
+=======
+        <argument>/home/mariama/projetwari/var/cache/test/doctrine/orm/Proxies</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3852,7 +4362,11 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
+<<<<<<< HEAD
         <argument>/home/cheikhgaye/projet-fil-rouge/src/Entity</argument>
+=======
+        <argument>/home/mariama/projetwari/src/Entity</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -3863,17 +4377,29 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_2042581f3e91165835bc9120805422bb344f519dd6bcc58ef7134a14dcf6c75f</argument>
+=======
+        <argument>sf_orm_default_a5c2baa0757abf0a9eb426d58913735a75a1cd04755cc23278c8c646d9b25613</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_2042581f3e91165835bc9120805422bb344f519dd6bcc58ef7134a14dcf6c75f</argument>
+=======
+        <argument>sf_orm_default_a5c2baa0757abf0a9eb426d58913735a75a1cd04755cc23278c8c646d9b25613</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_2042581f3e91165835bc9120805422bb344f519dd6bcc58ef7134a14dcf6c75f</argument>
+=======
+        <argument>sf_orm_default_a5c2baa0757abf0a9eb426d58913735a75a1cd04755cc23278c8c646d9b25613</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver">
@@ -4080,28 +4606,49 @@
     </service>
     <service id="api_platform.cache.route_name_resolver" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>gKVO7kqV3V</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>h1fFRoAIA1</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.identifiers_extractor" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>Tobo5+83eI</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>ePbILnzasE</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.subresource_operation_factory" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>Gtm9Iy7+Fa</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>8yn7YHimNl</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -4188,19 +4735,33 @@
     </service>
     <service id="api_platform.cache.metadata.resource" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>oFlnExngsp</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>8CqxMSF4JP</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.metadata.property" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
       <argument>E2l4VAoS9L</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/test/pools</argument>
+=======
+      <argument>XLxwzFiq3v</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mariama/projetwari/var/cache/test/pools</argument>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -4847,6 +5408,7 @@
     <service id="framework_extra_bundle.argument_name_convertor" class="Sensio\Bundle\FrameworkExtraBundle\Request\ArgumentNameConverter" public="false">
       <argument type="service" id="argument_metadata_factory"/>
     </service>
+<<<<<<< HEAD
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\WariController" class="App\Controller\WariController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\WariController" class="App\Controller\WariController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" abstract="true"/>
@@ -4873,6 +5435,155 @@
         <argument key="App\Controller\WariController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\WariController:addPartenaire" type="service" id=".service_locator.Z5uHcld"/>
         <argument key="App\Controller\WariController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+=======
+    <service id="lexik_jwt_authentication.check_config_command" class="Lexik\Bundle\JWTAuthenticationBundle\Command\CheckConfigCommand" public="true">
+      <tag name="console.command" command="lexik:jwt:check-config"/>
+      <argument type="service" id="lexik_jwt_authentication.key_loader.raw"/>
+      <argument>RS256</argument>
+      <call method="setName">
+        <argument>lexik:jwt:check-config</argument>
+      </call>
+    </service>
+    <service id="lexik_jwt_authentication.generate_token_command" class="Lexik\Bundle\JWTAuthenticationBundle\Command\GenerateTokenCommand" public="true">
+      <tag name="console.command" command="lexik:jwt:generate-token"/>
+      <argument type="service" id="lexik_jwt_authentication.jwt_manager"/>
+      <argument type="iterator">
+        <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+      </argument>
+      <call method="setName">
+        <argument>lexik:jwt:generate-token</argument>
+      </call>
+    </service>
+    <service id="lexik_jwt_authentication.security.authentication.provider" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Authentication\Provider\JWTProvider" public="false">
+      <argument></argument>
+      <argument type="service" id="lexik_jwt_authentication.jwt_manager"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>username</argument>
+      <call method="setUserIdentityField">
+        <argument>username</argument>
+      </call>
+      <deprecated>The "%service_id%" service is deprecated since LexikJWTAuthenticationBundle version 2.0 and will be removed in 3.0</deprecated>
+    </service>
+    <service id="lexik_jwt_authentication.security.authentication.listener" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Firewall\JWTListener" public="false">
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="security.authentication.manager"/>
+      <argument></argument>
+      <call method="setDispatcher">
+        <argument type="service" id="debug.event_dispatcher"/>
+      </call>
+      <deprecated>The "%service_id%" service is deprecated since LexikJWTAuthenticationBundle version 2.0 and will be removed in 3.0</deprecated>
+    </service>
+    <service id="lexik_jwt_authentication.security.authentication.entry_point" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\EntryPoint\JWTEntryPoint" public="false">
+      <deprecated>The "%service_id%" service is deprecated since LexikJWTAuthenticationBundle version 2.0 and will be removed in 3.0</deprecated>
+    </service>
+    <service id="lexik_jwt_authentication.jwt_manager" class="Lexik\Bundle\JWTAuthenticationBundle\Services\JWTManager" public="true">
+      <argument type="service" id="lexik_jwt_authentication.encoder.lcobucci"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>username</argument>
+      <call method="setUserIdentityField">
+        <argument>username</argument>
+      </call>
+    </service>
+    <service id="lexik_jwt_authentication.key_loader.abstract" public="false" abstract="true">
+      <argument></argument>
+      <argument></argument>
+      <argument>%env(JWT_PASSPHRASE)%</argument>
+    </service>
+    <service id="lexik_jwt_authentication.key_loader.openssl" class="Lexik\Bundle\JWTAuthenticationBundle\Services\KeyLoader\OpenSSLKeyLoader" public="false">
+      <argument></argument>
+      <argument></argument>
+      <argument>%env(JWT_PASSPHRASE)%</argument>
+      <deprecated>The "%service_id%" service is deprecated since version 2.5 and will be removed in 3.0. Use lexik_jwt_authentication.key_loader.raw instead.</deprecated>
+    </service>
+    <service id="lexik_jwt_authentication.key_loader.raw" class="Lexik\Bundle\JWTAuthenticationBundle\Services\KeyLoader\RawKeyLoader" public="false">
+      <argument>%env(resolve:JWT_SECRET_KEY)%</argument>
+      <argument>%env(resolve:JWT_PUBLIC_KEY)%</argument>
+      <argument>%env(JWT_PASSPHRASE)%</argument>
+    </service>
+    <service id="lexik_jwt_authentication.encoder.default" class="Lexik\Bundle\JWTAuthenticationBundle\Encoder\DefaultEncoder">
+      <argument type="service" id="lexik_jwt_authentication.jws_provider.default"/>
+    </service>
+    <service id="lexik_jwt_authentication.jws_provider.default" class="Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\DefaultJWSProvider" public="false">
+      <argument type="service" id="lexik_jwt_authentication.key_loader.raw"/>
+      <argument>openssl</argument>
+      <argument>RS256</argument>
+      <argument>3600</argument>
+      <argument>0</argument>
+      <deprecated>The "%service_id%" is deprecated since version 2.5 and will be removed in 5.0, use "lexik_jwt_authentication.jws_provider.lcobucci" instead.</deprecated>
+    </service>
+    <service id="lexik_jwt_authentication.encoder.lcobucci" class="Lexik\Bundle\JWTAuthenticationBundle\Encoder\LcobucciJWTEncoder">
+      <argument type="service" id="lexik_jwt_authentication.jws_provider.lcobucci"/>
+    </service>
+    <service id="lexik_jwt_authentication.jws_provider.lcobucci" class="Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\LcobucciJWSProvider" public="false">
+      <argument type="service" id="lexik_jwt_authentication.key_loader.raw"/>
+      <argument>openssl</argument>
+      <argument>RS256</argument>
+      <argument>3600</argument>
+      <argument>0</argument>
+    </service>
+    <service id="lexik_jwt_authentication.handler.authentication_success" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationSuccessHandler">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="service" id="lexik_jwt_authentication.jwt_manager"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+    </service>
+    <service id="lexik_jwt_authentication.handler.authentication_failure" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationFailureHandler">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+    </service>
+    <service id="lexik_jwt_authentication.security.guard.jwt_token_authenticator" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JWTTokenAuthenticator">
+      <argument type="service" id="lexik_jwt_authentication.jwt_manager"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="lexik_jwt_authentication.extractor.chain_extractor"/>
+    </service>
+    <service id="lexik_jwt_authentication.extractor.chain_extractor" class="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\ChainTokenExtractor" public="false">
+      <argument type="collection">
+        <argument type="service" id="lexik_jwt_authentication.extractor.authorization_header_extractor"/>
+      </argument>
+    </service>
+    <service id="lexik_jwt_authentication.extractor.authorization_header_extractor" class="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\AuthorizationHeaderTokenExtractor">
+      <argument>Bearer</argument>
+      <argument>Authorization</argument>
+    </service>
+    <service id="lexik_jwt_authentication.extractor.query_parameter_extractor" class="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\QueryParameterTokenExtractor">
+      <argument></argument>
+    </service>
+    <service id="lexik_jwt_authentication.extractor.cookie_extractor" class="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\CookieTokenExtractor">
+      <argument></argument>
+    </service>
+    <service id="lexik_jwt_authentication.security.jwt_user_provider" class="Lexik\Bundle\JWTAuthenticationBundle\Security\User\JWTUserProvider" public="false">
+      <argument></argument>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\WariController" class="App\Controller\WariController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\WariController" class="App\Controller\WariController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\WariController" class="App\Controller\WariController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".service_locator.JBoVXlr" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ZIsCxOI" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
+    <service id=".service_locator.1rHl9KC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Controller\SecurityController::register" type="service" id=".service_locator.JBoVXlr"/>
+        <argument key="App\Controller\WariController::AjoutP" type="service" id=".service_locator.ZIsCxOI"/>
+        <argument key="App\Controller\SecurityController:register" type="service" id=".service_locator.JBoVXlr"/>
+        <argument key="App\Controller\WariController:AjoutP" type="service" id=".service_locator.ZIsCxOI"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
     </service>
     <service id=".service_locator.LtnrEkg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -4934,10 +5645,16 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
+<<<<<<< HEAD
     <service id=".service_locator.hKwafza" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\PartenaireType" type="service" id="App\Form\PartenaireType"/>
+=======
+    <service id=".service_locator.Fck5jT9" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\FileType" type="service" id="form.type.file"/>
@@ -4965,10 +5682,18 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
+<<<<<<< HEAD
     <service id=".service_locator.im2pOIF" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\PartenairesRepository" type="service" id="App\Repository\PartenairesRepository"/>
+=======
+    <service id=".service_locator.Md1IYBl" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Repository\PartenairesRepository" type="service" id="App\Repository\PartenairesRepository"/>
+        <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       </argument>
     </service>
     <service id="fos_rest.request_matcher.2364365e6bb6bfd5cadeda231e59db9139fadac2b673beb794ba3c0068839a899dc3c386" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
@@ -5007,6 +5732,38 @@
         <argument key="security.token_storage" type="service" id="security.token_storage"/>
       </argument>
     </service>
+<<<<<<< HEAD
+=======
+    <service id=".service_locator.CDOTD6." class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="doctrine" type="service" id="doctrine" on-invalid="ignore"/>
+        <argument key="form.factory" type="service" id="form.factory" on-invalid="ignore"/>
+        <argument key="http_kernel" type="service" id="http_kernel" on-invalid="ignore"/>
+        <argument key="parameter_bag" type="service" id="parameter_bag" on-invalid="ignore"/>
+        <argument key="request_stack" type="service" id="request_stack" on-invalid="ignore"/>
+        <argument key="router" type="service" id="router.default" on-invalid="ignore"/>
+        <argument key="security.authorization_checker" type="service" id="security.authorization_checker" on-invalid="ignore"/>
+        <argument key="security.csrf.token_manager" type="service" id="security.csrf.token_manager" on-invalid="ignore"/>
+        <argument key="security.token_storage" type="service" id="security.token_storage" on-invalid="ignore"/>
+        <argument key="serializer" type="service" id="serializer" on-invalid="ignore"/>
+        <argument key="session" type="service" id="session" on-invalid="ignore"/>
+        <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
+      </argument>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>
+      <argument>App\Controller\SecurityController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Controller\WariController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\WariController"/>
+      <argument>App\Controller\WariController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id=".service_locator.MAfdX1A" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5111,12 +5868,20 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.KhFsRJO"/>
+=======
+      <argument type="service" id=".service_locator.1rHl9KC"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.KhFsRJO"/>
+=======
+      <argument type="service" id=".service_locator.1rHl9KC"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -5154,7 +5919,11 @@
       <argument type="service" id="api_platform.path_segment_name_generator.underscore"/>
     </service>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.xt7SgWS"/>
+=======
+      <argument type="service" id=".service_locator.2tAGzOP"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <argument type="collection">
         <argument key="about">console.command.about</argument>
         <argument key="assets:install">console.command.assets_install</argument>
@@ -5196,9 +5965,17 @@
         <argument key="doctrine:schema:update">doctrine.schema_update_command</argument>
         <argument key="doctrine:schema:validate">doctrine.schema_validate_command</argument>
         <argument key="doctrine:mapping:import">doctrine.mapping_import_command</argument>
+<<<<<<< HEAD
       </argument>
     </service>
     <service id=".service_locator.xt7SgWS" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+=======
+        <argument key="lexik:jwt:check-config">lexik_jwt_authentication.check_config_command</argument>
+        <argument key="lexik:jwt:generate-token">lexik_jwt_authentication.generate_token_command</argument>
+      </argument>
+    </service>
+    <service id=".service_locator.2tAGzOP" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="console.command.about" type="service" id="console.command.about"/>
@@ -5238,6 +6015,11 @@
         <argument key="doctrine.schema_drop_command" type="service" id="doctrine.schema_drop_command"/>
         <argument key="doctrine.schema_update_command" type="service" id="doctrine.schema_update_command"/>
         <argument key="doctrine.schema_validate_command" type="service" id="doctrine.schema_validate_command"/>
+<<<<<<< HEAD
+=======
+        <argument key="lexik_jwt_authentication.check_config_command" type="service" id="lexik_jwt_authentication.check_config_command"/>
+        <argument key="lexik_jwt_authentication.generate_token_command" type="service" id="lexik_jwt_authentication.generate_token_command"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
         <argument key="security.command.user_password_encoder" type="service" id="security.command.user_password_encoder"/>
         <argument key="twig.command.debug" type="service" id="twig.command.debug"/>
         <argument key="twig.command.lint" type="service" id="twig.command.lint"/>
@@ -5335,7 +6117,11 @@
     <service id="Symfony\Component\Security\Http\HttpUtils" alias="security.http_utils" public="false"/>
     <service id="Symfony\Component\Security\Guard\GuardAuthenticatorHandler" alias="security.authentication.guard_handler" public="false"/>
     <service id="security.firewall" alias="debug.security.firewall" public="false"/>
+<<<<<<< HEAD
     <service id="Symfony\Component\Security\Core\User\UserProviderInterface" alias="security.user.provider.concrete.in_memory"/>
+=======
+    <service id="Symfony\Component\Security\Core\User\UserProviderInterface" alias="security.user.provider.concrete.app_user_provider"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id="security.authentication.session_strategy.main" alias="security.authentication.session_strategy"/>
     <service id="security.user_checker.main" alias="security.user_checker" public="false"/>
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker" public="false"/>
@@ -5405,7 +6191,21 @@
     <service id="fos_rest.inflector" alias="fos_rest.inflector.doctrine"/>
     <service id="sensio_framework_extra.converter.doctrine.orm.expression_language" alias="sensio_framework_extra.converter.doctrine.orm.expression_language.default" public="false"/>
     <service id="sensio_framework_extra.security.expression_language" alias="sensio_framework_extra.security.expression_language.default" public="false"/>
+<<<<<<< HEAD
     <service id="argument_resolver.controller_locator" alias=".service_locator.KhFsRJO"/>
+=======
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenInterface" alias="lexik_jwt_authentication.jwt_manager"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface" alias="lexik_jwt_authentication.jwt_manager"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\JWSProviderInterface" alias="lexik_jwt_authentication.jws_provider.lcobucci"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationSuccessHandler" alias="lexik_jwt_authentication.handler.authentication_success"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationFailureHandler" alias="lexik_jwt_authentication.handler.authentication_failure"/>
+    <service id="lexik_jwt_authentication.jwt_token_authenticator" alias="lexik_jwt_authentication.security.guard.jwt_token_authenticator"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\TokenExtractorInterface" alias="lexik_jwt_authentication.extractor.chain_extractor"/>
+    <service id="lexik_jwt_authentication.encoder" alias="lexik_jwt_authentication.encoder.lcobucci" public="true"/>
+    <service id="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" alias="lexik_jwt_authentication.encoder.lcobucci"/>
+    <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.1rHl9KC"/>
+>>>>>>> 72578ce8c226d4dce3dab2524b26d312320622bc
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>
