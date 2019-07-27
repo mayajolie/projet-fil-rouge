@@ -85,11 +85,11 @@ class __TwigTemplate_961e98c49fbc1cb6153fcb5da254337f70b6d2b3c6c3a73985dc3b3e90f
     <ul>
         <li>Your controller at <code><a href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/mariama/projetwari/src/Controller/WariController.php", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/cheikhgaye/projet-fil-rouge/src/Controller/WariController.php", 0), "html", null, true);
         echo "\">src/Controller/WariController.php</a></code></li>
         <li>Your template at <code><a href=\"";
         // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/mariama/projetwari/templates/wari/index.html.twig", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/home/cheikhgaye/projet-fil-rouge/templates/wari/index.html.twig", 0), "html", null, true);
         echo "\">templates/wari/index.html.twig</a></code></li>
     </ul>
 </div>
@@ -131,8 +131,8 @@ class __TwigTemplate_961e98c49fbc1cb6153fcb5da254337f70b6d2b3c6c3a73985dc3b3e90f
 
     This friendly message is coming from:
     <ul>
-        <li>Your controller at <code><a href=\"{{ '/home/mariama/projetwari/src/Controller/WariController.php'|file_link(0) }}\">src/Controller/WariController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ '/home/mariama/projetwari/templates/wari/index.html.twig'|file_link(0) }}\">templates/wari/index.html.twig</a></code></li>
+        <li>Your controller at <code><a href=\"{{ '/home/cheikhgaye/projet-fil-rouge/src/Controller/WariController.php'|file_link(0) }}\">src/Controller/WariController.php</a></code></li>
+        <li>Your template at <code><a href=\"{{ '/home/cheikhgaye/projet-fil-rouge/templates/wari/index.html.twig'|file_link(0) }}\">templates/wari/index.html.twig</a></code></li>
     </ul>
 </div>
 {% endblock %}

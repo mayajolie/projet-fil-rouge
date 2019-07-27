@@ -2,30 +2,38 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use FOS\RestBundle\Controller\FOSRestController;
-use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Entity\Partenaires;
+use App\Entity\CompteBancaire;
+use App\Form\PartenaireType;
+use App\Form\ComptBType;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use FOS\RestBundle\Controller\Annotations as Rest; // alias pour toutes les annotations
+use AppBundle\Form\Type\PlaceType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 /**
  * @Route("/api")
  */
 class WariController extends FOSRestController
 {
-  /**
-     * @Route("/partenaires", name="partenaires", methods={"GET"})
+    /**
+     * @Rest\Get("/partenaires", name="find_partenaires")
      */
-    public function patenaires()
+    public function index()
     {
         $repo = $this->getDoctrine()->getRepository(Partenaires::class);
         $partenaire = $repo->findAll();
+        
         return $this->handleView($this->view($partenaire));
 
             }
@@ -52,9 +60,6 @@ class WariController extends FOSRestController
         ];
         return new JsonResponse($data, 500);
     }
-
-
-
     /**
      * @Route("/ajout/{id}", name="bloquer", methods={"PUT"})
      */
@@ -87,27 +92,20 @@ class WariController extends FOSRestController
     /**
      * @Route("/comptB", name="comptB", methods={"POST"})
      */
-    public function compte(Request $request, SerializerInterface $serializer, EntityManagerInterface $entityManager)
+    public function ajoutComptB(Request $request)
     {
-      $partenaire = $serializer->deserialize($request->getContent(), CompteBancaire::class, 'json'); 
-        $entityManager->persist($partenaire);
-        $entityManager->flush();
+        $compb = new CompteBancaire();
+        $form = $this->createform(ComptBType::class, $compb);
+        $data = json_decode($request->getContent(), true);
+        $form->submit($data);
         
-        $data = [
-           
-            'status' => 201,
-            'message' => 'L\'utilisateur a été créé'
-        ];
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($compb);
+            $em->flush();
 
-        return new JsonResponse($data, 201);
-    
-        $data =[
-            'status' => 500,
-            'message' => 'Vous devez renseigner les clés username et password'
-        ];
-        return new JsonResponse($data, 500);
+            return $this->handleView($this->view(['status' => 'ok'], Response::HTTP_CREATED));
+        
+
     }
-
-
-
+    
 }

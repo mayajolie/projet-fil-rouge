@@ -29,7 +29,7 @@ class CompteBancaire
     private $solde;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $date_depot;
 
@@ -73,7 +73,7 @@ class CompteBancaire
         return $this->date_depot;
     }
 
-    public function setDateDepot(\DateTimeInterface $date_depot): self
+    public function setDateDepot(\Date $date_depot): self
     {
         $this->date_depot = $date_depot;
 
