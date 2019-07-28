@@ -65,6 +65,10 @@ class __TwigTemplate_1d1c90510456bb25d1afdfd855454558b380b8f07e08546e5b8ae59bd20
     value=\"<?php echo \$view->escape(\$value) ?>\"
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
+<<<<<<< HEAD:var/cache/dev/twig/07/070a452ebbcbd98c5823c3afafa3563e39e9fe90ddeb868232d596b03b529952.php
 ", "@Framework/Form/radio_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
+=======
+", "@Framework/Form/radio_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/e8/e8af9b4e93a040a9426cdf6636a7f46c6ede30aa51ff866853b9da3412a9141e.php
     }
 }

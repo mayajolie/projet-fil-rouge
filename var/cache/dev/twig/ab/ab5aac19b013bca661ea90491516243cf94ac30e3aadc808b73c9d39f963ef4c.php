@@ -59,6 +59,10 @@ class __TwigTemplate_2464dbd4935ca2d98fb6f5fecdbfa36df1c4267d6d8caf3511cdab9912b
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'text']).\$view->escape(\$symbol) ?>
+<<<<<<< HEAD:var/cache/dev/twig/ab/ab5aac19b013bca661ea90491516243cf94ac30e3aadc808b73c9d39f963ef4c.php
 ", "@Framework/Form/percent_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+=======
+", "@Framework/Form/percent_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/86/8658020881d6be0e575590300d1d281891a30c7dcae0f1bea3b419605e458913.php
     }
 }

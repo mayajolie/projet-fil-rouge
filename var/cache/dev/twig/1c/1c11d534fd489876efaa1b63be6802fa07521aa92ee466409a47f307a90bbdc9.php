@@ -165,6 +165,10 @@ class __TwigTemplate_3c8d5643b8d8d474e6f56d008d67d1ce50c8c002dac461f197ce0887a8e
         {%- endfor -%}
     </pre>
 {% endif %}
+<<<<<<< HEAD:var/cache/dev/twig/1c/1c11d534fd489876efaa1b63be6802fa07521aa92ee466409a47f307a90bbdc9.php
 ", "@Doctrine/Collector/explain.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+=======
+", "@Doctrine/Collector/explain.html.twig", "/home/mariama/projetwari/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/01/01e1d1a2f20364ab2d3663f89452e70b43bdd7d83b3bd395719fbb62199ded7d.php
     }
 }

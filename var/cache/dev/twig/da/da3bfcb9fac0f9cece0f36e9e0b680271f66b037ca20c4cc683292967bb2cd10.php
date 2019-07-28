@@ -203,6 +203,10 @@ class __TwigTemplate_1617a3ca4c51f5e9b4c42eaf3ab8a3829f0e3f856059d33f1256baccdcc
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
+<<<<<<< HEAD:var/cache/dev/twig/da/da3bfcb9fac0f9cece0f36e9e0b680271f66b037ca20c4cc683292967bb2cd10.php
 ", "@Twig/layout.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+=======
+", "@Twig/layout.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/ff/ff92ac0b7f3f76876c746036b4585f62fd9734a31e7cc1334d41d46306cc22af.php
     }
 }

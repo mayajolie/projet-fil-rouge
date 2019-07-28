@@ -357,6 +357,10 @@ class __TwigTemplate_cc43a613a458d884a054aa81663c676df8be1acbb15f2ad78666821c7cb
 
 </body>
 </html>
+<<<<<<< HEAD:var/cache/dev/twig/9b/9b251b20179f1a51f6acc74d86f5d6fb361924a6f26c98a050b46dede02ac883.php
 ", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+=======
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/mariama/projetwari/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/03/03ecf1dd45d9970a7d270cf2c1ec8f100f3193409bc37993f3aa7139ccbc4162.php
     }
 }

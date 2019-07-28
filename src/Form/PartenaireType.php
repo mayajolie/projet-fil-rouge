@@ -17,7 +17,7 @@ class PartenaireType extends AbstractType
             ->add('ninea')
             ->add('adresse')
             ->add('telephone')
-            ->add('codeP')
+            ->add('etat')
             ->add('save', SubmitType::class)
         ;
     }

@@ -67,6 +67,10 @@ class __TwigTemplate_7131b98a580820a19aaf0fd3ee0aa1959f2d6dbca64e26c87982c214673
     <?php \$help = false === \$help_html ? \$view->escape(\$help) : \$help ?>
     <p id=\"<?php echo \$view->escape(\$id); ?>_help\" <?php echo ' '.\$view['form']->block(\$form, 'attributes', ['attr' => \$help_attr]); ?>><?php echo \$help; ?></p>
 <?php endif; ?>
+<<<<<<< HEAD:var/cache/dev/twig/62/6258d374a115aa26ed72f5df451d03fcdaa587f3f68384bd13e250eb41ee6fd5.php
 ", "@Framework/Form/form_help.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_help.html.php");
+=======
+", "@Framework/Form/form_help.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_help.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/9b/9b8cfc60cefc0c8b1214525a43709eb86549bcc3d28debb00de5cf5eebb58a94.php
     }
 }

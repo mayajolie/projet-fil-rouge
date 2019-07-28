@@ -136,6 +136,10 @@ class __TwigTemplate_784209d402663119046145c4b15cf212bd45899786090fa992b9c7064d4
     </ul>
 </div>
 {% endblock %}
+<<<<<<< HEAD:var/cache/dev/twig/33/3348edbb5ed45d7a7d4bca981da4b03df84174cd3c924c21edbf85316cf919ac.php
 ", "wari/index.html.twig", "/home/cheikhgaye/projet-fil-rouge/templates/wari/index.html.twig");
+=======
+", "wari/index.html.twig", "/home/mariama/projetwari/templates/wari/index.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/1f/1fb67dd989166b679ebd8266dabbd581e209dab8554ee83a90c2a15dc472420d.php
     }
 }

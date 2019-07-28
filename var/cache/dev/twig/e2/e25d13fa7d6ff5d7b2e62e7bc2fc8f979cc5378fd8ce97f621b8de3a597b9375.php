@@ -57,6 +57,10 @@ class __TwigTemplate_26517ed6759b9f20f25e6bf68c98fac92dcc7c9ff019abc50a5ce2a778a
     public function getSourceContext()
     {
         return new Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1408 960V832q0-26-19-45t-45-19H448q-26 0-45 19t-19 45v128q0 26 19 45t45 19h896q26 0 45-19t19-45zm256-544v960q0 119-84.5 203.5T1376 1664H416q-119 0-203.5-84.5T128 1376V416q0-119 84.5-203.5T416 128h960q119 0 203.5 84.5T1664 416z\"/></svg>
+<<<<<<< HEAD:var/cache/dev/twig/e2/e25d13fa7d6ff5d7b2e62e7bc2fc8f979cc5378fd8ce97f621b8de3a597b9375.php
 ", "@Twig/images/icon-minus-square.svg", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square.svg");
+=======
+", "@Twig/images/icon-minus-square.svg", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square.svg");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/e4/e4171b8dd2444892174302d20e9c887451f5d253b022d70919a15ee327950f97.php
     }
 }

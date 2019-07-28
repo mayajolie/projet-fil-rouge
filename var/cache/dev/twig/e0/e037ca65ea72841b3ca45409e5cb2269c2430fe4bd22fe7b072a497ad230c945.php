@@ -73,6 +73,10 @@ class __TwigTemplate_874ac31225ed97fdddbfd40bf385a61124b7024f901ffec72a5bb77b4b5
         return new Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
+<<<<<<< HEAD:var/cache/dev/twig/e0/e037ca65ea72841b3ca45409e5cb2269c2430fe4bd22fe7b072a497ad230c945.php
 ", "@Twig/Exception/error.xml.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+=======
+", "@Twig/Exception/error.xml.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/8c/8cb7a3bc1c739ee09ec1b1518f0e65c9ef8357aa8cf414fc5b59008ef85e1824.php
     }
 }

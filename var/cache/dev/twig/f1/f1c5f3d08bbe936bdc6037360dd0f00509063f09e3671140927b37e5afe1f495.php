@@ -63,6 +63,10 @@ class __TwigTemplate_be31a4835e5ad01fb498ac9f7a3bcb8ce628e41c0976cc86c3b163f52a4
     public function getSourceContext()
     {
         return new Source("{{ { 'error': { 'code': status_code, 'message': status_text } }|json_encode|raw }}
+<<<<<<< HEAD:var/cache/dev/twig/f1/f1c5f3d08bbe936bdc6037360dd0f00509063f09e3671140927b37e5afe1f495.php
 ", "@Twig/Exception/error.json.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
+=======
+", "@Twig/Exception/error.json.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/99/999c7f1ceefc4a5df427e34f082b3d3d96532f98de2b6866b2ead514f048c5e8.php
     }
 }

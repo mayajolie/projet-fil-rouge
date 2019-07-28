@@ -57,6 +57,10 @@ class __TwigTemplate_dfa1e7c4785bde1a7e546a2012cc506bfe3d36dc85bc5655b40ec77010f
     public function getSourceContext()
     {
         return new Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#FFF\" d=\"M896 0q182 0 348 71t286 191 191 286 71 348-71 348-191 286-286 191-348 71-348-71-286-191-191-286T0 896t71-348 191-286T548 71 896 0zm0 128q-190 0-361 90l194 194q82-28 167-28t167 28l194-194q-171-90-361-90zM218 1257l194-194q-28-82-28-167t28-167L218 535q-90 171-90 361t90 361zm678 407q190 0 361-90l-194-194q-82 28-167 28t-167-28l-194 194q171 90 361 90zm0-384q159 0 271.5-112.5T1280 896t-112.5-271.5T896 512 624.5 624.5 512 896t112.5 271.5T896 1280zm484-217l194 194q90-171 90-361t-90-361l-194 194q28 82 28 167t-28 167z\"/></svg>
+<<<<<<< HEAD:var/cache/dev/twig/18/18fbafd9abfc4e02730118cbacc5f556df897031ea5c4718f73bc2275a8afe20.php
 ", "@Twig/images/icon-support.svg", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/images/icon-support.svg");
+=======
+", "@Twig/images/icon-support.svg", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/images/icon-support.svg");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/c6/c6e6da48decff1261e0fef2de6885a19b1b2b66204736596a6358ae0a7d05089.php
     }
 }

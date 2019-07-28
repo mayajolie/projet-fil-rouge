@@ -65,6 +65,10 @@ class __TwigTemplate_f9d1fecc15fd8577fc24cbef1fd0104aac3b6b38f63fb1013da54f6d718
         <?php echo \$view['form']->row(\$child) ?>
     <?php endif; ?>
 <?php endforeach; ?>
+<<<<<<< HEAD:var/cache/dev/twig/d8/d859565bdb5c2d1165f9de42a24c04e765292959585ea2069c06e517dc7152be.php
 ", "@Framework/Form/form_rest.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_rest.html.php");
+=======
+", "@Framework/Form/form_rest.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_rest.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/a1/a19808ce21718c355202777f55481e31ec360b7229cec6e90357090a99440ba0.php
     }
 }

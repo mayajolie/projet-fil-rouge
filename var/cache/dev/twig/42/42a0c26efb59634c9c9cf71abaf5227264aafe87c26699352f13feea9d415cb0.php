@@ -1348,6 +1348,10 @@ $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBl
         {% if form is not rootform %}</small>{% else %}</div>{% endif %}
     {%- endif %}
 {%- endblock form_errors %}
+<<<<<<< HEAD:var/cache/dev/twig/42/42a0c26efb59634c9c9cf71abaf5227264aafe87c26699352f13feea9d415cb0.php
 ", "foundation_5_layout.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form/foundation_5_layout.html.twig");
+=======
+", "foundation_5_layout.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form/foundation_5_layout.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/5e/5e990ecc38d395e5f88765866619b564e2ddea7be5c928b1108c2f428566348b.php
     }
 }

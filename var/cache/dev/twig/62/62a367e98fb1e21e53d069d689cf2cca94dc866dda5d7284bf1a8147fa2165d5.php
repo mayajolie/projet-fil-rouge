@@ -124,6 +124,10 @@ class __TwigTemplate_5c87c8e6795e9d85176ed747f61f30cacc8534c316705e9539c0d2701cf
 
 </body>
 </html>
+<<<<<<< HEAD:var/cache/dev/twig/62/62a367e98fb1e21e53d069d689cf2cca94dc866dda5d7284bf1a8147fa2165d5.php
 ", "@ApiPlatform/Graphiql/index.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+=======
+", "@ApiPlatform/Graphiql/index.html.twig", "/home/mariama/projetwari/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/d9/d956052b2279368831f48dbb11af6773a87abbaccfa1d5bb5af1d5c8fba33175.php
     }
 }

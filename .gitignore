@@ -6,10 +6,14 @@
 ### /public/bundles/ ###
  /var/ 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /vendor/
 =======
  /vendor/ 
 >>>>>>> a0fce9984d21f64078fc9e35847779310eeb4984
+=======
+ /vendor/
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###

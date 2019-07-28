@@ -83,6 +83,10 @@ at {{ trace.class ~ trace.type ~ trace.function }}({{ trace.args|format_args_as_
 {% if trace.file|default('') is not empty and trace.line|default('') is not empty %}
   {{- trace.function ? '\\n     (' : 'at '}}{{ trace.file|format_file(trace.line)|striptags|replace({ (' at line ' ~ trace.line): '' }) }}:{{ trace.line }}{{ trace.function ? ')' }}
 {%- endif %}
+<<<<<<< HEAD:var/cache/dev/twig/44/44472c2ba1d5e46ffda5aa19a49c3633ea031650ed662f739792c0aa7d71c5e8.php
 ", "@Twig/Exception/trace.txt.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/trace.txt.twig");
+=======
+", "@Twig/Exception/trace.txt.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/trace.txt.twig");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/42/4295eb2f27c937b5eec2acc1b62d526a4a39b7319b2c36e4efe45f4e0d958a69.php
     }
 }

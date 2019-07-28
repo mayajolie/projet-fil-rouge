@@ -65,6 +65,10 @@ class __TwigTemplate_55a48ca7e568d2cc0a0d0fa496f9a701ed017fe639151ce5c7a492ee483
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
+<<<<<<< HEAD:var/cache/dev/twig/d2/d2f68dcbce33bd49b3ee953707401208dfde04235a920a02f27b0d07503bccbd.php
 ", "@Framework/FormTable/hidden_row.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
+=======
+", "@Framework/FormTable/hidden_row.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/d7/d73a37d37d4cae0025144a1142b8c722dea3ac99e983e65d6c399bfacc23ed93.php
     }
 }

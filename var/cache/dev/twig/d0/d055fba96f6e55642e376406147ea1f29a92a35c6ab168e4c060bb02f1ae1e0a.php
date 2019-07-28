@@ -63,6 +63,10 @@ class __TwigTemplate_cd95a0b3d2f31ff23dda007e6b6e7d917aa9981df369685499408886305
     <path fill=\"#AAAAAA\" d=\"M5,8h14c1.7,0,3-1.3,3-3s-1.3-3-3-3H5C3.3,2,2,3.3,2,5S3.3,8,5,8z M18,3.6c0.8,0,1.5,0.7,1.5,1.5S18.8,6.6,18,6.6s-1.5-0.7-1.5-1.5S17.2,3.6,18,3.6z M19,9H5c-1.7,0-3,1.3-3,3s1.3,3,3,3h14c1.7,0,3-1.3,3-3S20.7,9,19,9z M18,13.6
     c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S18.8,13.6,18,13.6z M19,16H5c-1.7,0-3,1.3-3,3s1.3,3,3,3h14c1.7,0,3-1.3,3-3S20.7,16,19,16z M18,20.6c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S18.8,20.6,18,20.6z\"/>
 </svg>
+<<<<<<< HEAD:var/cache/dev/twig/d0/d055fba96f6e55642e376406147ea1f29a92a35c6ab168e4c060bb02f1ae1e0a.php
 ", "@Doctrine/Collector/icon.svg", "/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-bundle/Resources/views/Collector/icon.svg");
+=======
+", "@Doctrine/Collector/icon.svg", "/home/mariama/projetwari/vendor/doctrine/doctrine-bundle/Resources/views/Collector/icon.svg");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/7c/7cad1ac9a22cada568ed17d255647551c2460294b4e7851835240bf1b99b3276.php
     }
 }

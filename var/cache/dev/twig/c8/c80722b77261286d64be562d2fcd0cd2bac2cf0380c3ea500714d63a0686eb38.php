@@ -59,6 +59,10 @@ class __TwigTemplate_86f013399af12f14fd2ec51ac089c851630c8ab764aa23d1f00df85449a
     {
         return new Source("<?php if (!empty(\$id)): ?>id=\"<?php echo \$view->escape(\$id) ?>\"<?php endif ?>
 <?php echo \$attr ? ' '.\$view['form']->block(\$form, 'attributes') : '' ?>
+<<<<<<< HEAD:var/cache/dev/twig/c8/c80722b77261286d64be562d2fcd0cd2bac2cf0380c3ea500714d63a0686eb38.php
 ", "@Framework/Form/widget_container_attributes.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/widget_container_attributes.html.php");
+=======
+", "@Framework/Form/widget_container_attributes.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/widget_container_attributes.html.php");
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/28/2893e6e40453fbaf1d444e1b383bbb2d7770c288dc3f173821e3c0e4b1c2883c.php
     }
 }
