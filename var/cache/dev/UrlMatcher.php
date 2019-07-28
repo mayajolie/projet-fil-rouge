@@ -8,6 +8,7 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/admin/part' => [[['_route' => 'admin_part', '_controller' => 'App\\Controller\\AdminPartController::index'], null, null, null, false, false, null]],
         '/api/register' => [[['_route' => 'register', '_controller' => 'App\\Controller\\SecurityController::register'], null, ['POST' => 0], null, false, false, null]],
         '/api/loginchek' => [[['_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
         '/api/partenaires' => [[['_route' => 'find_partenaires', '_controller' => 'App\\Controller\\WariController::index'], null, ['GET' => 0], null, false, false, null]],
