@@ -4,6 +4,7 @@
 
 return [
     '_twig_error_test' => [['code', '_format'], ['_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
+    'admin_part' => [[], ['_controller' => 'App\\Controller\\AdminPartController::index'], [], [['text', '/admin/part']], [], []],
     'register' => [[], ['_controller' => 'App\\Controller\\SecurityController::register'], [], [['text', '/api/register']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/api/loginchek']], [], []],
     'find_partenaires' => [[], ['_controller' => 'App\\Controller\\WariController::index'], [], [['text', '/api/partenaires']], [], []],

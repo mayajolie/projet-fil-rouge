@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
+<<<<<<< HEAD
+    <parameter key="kernel.root_dir">/home/cheikhgaye/projet-fil-rouge/src</parameter>
+    <parameter key="kernel.project_dir">/home/cheikhgaye/projet-fil-rouge</parameter>
+    <parameter key="kernel.environment">dev</parameter>
+    <parameter key="kernel.debug">true</parameter>
+    <parameter key="kernel.name">src</parameter>
+    <parameter key="kernel.cache_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/home/cheikhgaye/projet-fil-rouge/var/log</parameter>
+=======
     <parameter key="kernel.root_dir">/home/mariama/projetwari/src</parameter>
     <parameter key="kernel.project_dir">/home/mariama/projetwari</parameter>
     <parameter key="kernel.environment">dev</parameter>
@@ -8,6 +17,7 @@
     <parameter key="kernel.name">src</parameter>
     <parameter key="kernel.cache_dir">/home/mariama/projetwari/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">/home/mariama/projetwari/var/log</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
@@ -25,6 +35,57 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
+<<<<<<< HEAD
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
+      </parameter>
+      <parameter key="TwigBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
+      </parameter>
+      <parameter key="SecurityBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/symfony/security-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
+      </parameter>
+      <parameter key="NelmioCorsBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/nelmio/cors-bundle</parameter>
+        <parameter key="namespace">Nelmio\CorsBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineCacheBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-cache-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
+      </parameter>
+      <parameter key="ApiPlatformBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle</parameter>
+        <parameter key="namespace">ApiPlatform\Core\Bridge\Symfony\Bundle</parameter>
+      </parameter>
+      <parameter key="MakerBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
+      </parameter>
+      <parameter key="WebServerBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/symfony/web-server-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineMigrationsBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
+      </parameter>
+      <parameter key="FOSRestBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/friendsofsymfony/rest-bundle</parameter>
+        <parameter key="namespace">FOS\RestBundle</parameter>
+      </parameter>
+      <parameter key="SensioFrameworkExtraBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
+      </parameter>
+      <parameter key="LexikJWTAuthenticationBundle" type="collection">
+        <parameter key="path">/home/cheikhgaye/projet-fil-rouge/vendor/lexik/jwt-authentication-bundle</parameter>
+=======
         <parameter key="path">/home/mariama/projetwari/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
@@ -74,6 +135,7 @@
       </parameter>
       <parameter key="LexikJWTAuthenticationBundle" type="collection">
         <parameter key="path">/home/mariama/projetwari/vendor/lexik/jwt-authentication-bundle</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
         <parameter key="namespace">Lexik\Bundle\JWTAuthenticationBundle</parameter>
       </parameter>
     </parameter>
@@ -96,18 +158,30 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
+<<<<<<< HEAD
+    <parameter key="session.save_path">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/sessions</parameter>
+=======
     <parameter key="session.save_path">/home/mariama/projetwari/var/cache/dev/sessions</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
+<<<<<<< HEAD
+    <parameter key="validator.mapping.cache.file">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.translation_domain">validators</parameter>
+    <parameter key="data_collector.templates" type="collection"/>
+    <parameter key="debug.error_handler.throw_at">-1</parameter>
+    <parameter key="debug.container.dump">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+=======
     <parameter key="validator.mapping.cache.file">/home/mariama/projetwari/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.container.dump">/home/mariama/projetwari/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -115,13 +189,21 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
+<<<<<<< HEAD
+    <parameter key="serializer.mapping.cache.file">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/serialization.php</parameter>
+=======
     <parameter key="serializer.mapping.cache.file">/home/mariama/projetwari/var/cache/dev/serialization.php</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="twig.exception_listener.controller">twig.controller.exception::showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
+<<<<<<< HEAD
+    <parameter key="twig.default_path">/home/cheikhgaye/projet-fil-rouge/templates</parameter>
+=======
     <parameter key="twig.default_path">/home/mariama/projetwari/templates</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="security.authentication.trust_resolver.anonymous_class">null</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">null</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -268,7 +350,11 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
+<<<<<<< HEAD
+    <parameter key="doctrine.orm.proxy_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/doctrine/orm/Proxies</parameter>
+=======
     <parameter key="doctrine.orm.proxy_dir">/home/mariama/projetwari/var/cache/dev/doctrine/orm/Proxies</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="api_platform.enable_entrypoint">true</parameter>
     <parameter key="api_platform.enable_docs">true</parameter>
@@ -340,7 +426,11 @@
     </parameter>
     <parameter key="api_platform.http_cache.public">null</parameter>
     <parameter key="api_platform.resource_class_directories" type="collection">
+<<<<<<< HEAD
+      <parameter>/home/cheikhgaye/projet-fil-rouge/src/Entity</parameter>
+=======
       <parameter>/home/mariama/projetwari/src/Entity</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </parameter>
     <parameter key="api_platform.oauth.enabled">false</parameter>
     <parameter key="api_platform.oauth.clientId"></parameter>
@@ -357,7 +447,11 @@
     <parameter key="api_platform.graphql.enabled">false</parameter>
     <parameter key="api_platform.validator.serialize_payload_fields" type="collection"/>
     <parameter key="api_platform.elasticsearch.enabled">false</parameter>
+<<<<<<< HEAD
+    <parameter key="doctrine_migrations.dir_name">/home/cheikhgaye/projet-fil-rouge/src/Migrations</parameter>
+=======
     <parameter key="doctrine_migrations.dir_name">/home/mariama/projetwari/src/Migrations</parameter>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -395,6 +489,13 @@
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
+    <service id="App\Controller\AdminPartController" class="App\Controller\AdminPartController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\AdminPartController"/>
+      </call>
+    </service>
     <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -481,7 +582,11 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -490,9 +595,15 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/src/Resources</argument>
+      <argument type="collection">
+        <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
+=======
       <argument>/home/mariama/projetwari/src/Resources</argument>
       <argument type="collection">
         <argument>/home/mariama/projetwari/src</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -558,7 +669,11 @@
     <service id="console.command.assets_install" class="Symfony\Bundle\FrameworkBundle\Command\AssetsInstallCommand" public="false">
       <tag name="console.command" command="assets:install"/>
       <argument type="service" id="filesystem"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -709,9 +824,15 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>8X0S6iktOS</argument>
+      <argument>0</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>o9mTaWm6iW</argument>
       <argument>0</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -726,54 +847,95 @@
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>Mjj+ocZ+X-</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>SgSvqmhtXI</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>qkl1BGzNb8</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>oSt-ZBJqa2</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>kMQ30x0cXz</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>7HRd9Il0UV</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>rqaw2soRaN</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>ezgkJd21vh</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>mhCAAms+bm</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>5AQFaxJxjL</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>J1fMB85I8s</argument>
+      <argument>0</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>naKJF2wXVY</argument>
       <argument>0</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -785,7 +947,11 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -814,7 +980,11 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -913,8 +1083,13 @@
         <argument key="api_platform.cache.metadata.property" type="service" id="api_platform.cache.metadata.property" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
+<<<<<<< HEAD
+    <service id=".1_NativeFileSessionHandler~6Wc_VnE" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/sessions</argument>
+=======
     <service id=".1_NativeFileSessionHandler~9t6U38l" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
       <argument>/home/mariama/projetwari/var/cache/dev/sessions</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -937,12 +1112,20 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/sessions</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/sessions</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
+<<<<<<< HEAD
+      <argument type="service" id=".1_NativeFileSessionHandler~6Wc_VnE"/>
+=======
       <argument type="service" id=".1_NativeFileSessionHandler~9t6U38l"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1094,8 +1277,13 @@
       <argument type="service" id="assets.empty_version_strategy"/>
       <argument type="service" id="assets.context"/>
     </service>
+<<<<<<< HEAD
+    <service id=".1_PhpArrayAdapter~Dp2IZ5X" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/validation.php</argument>
+=======
     <service id=".1_PhpArrayAdapter~MTwkxlV" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/mariama/projetwari/var/cache/dev/validation.php</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1111,7 +1299,11 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
+<<<<<<< HEAD
+          <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/form/Resources/config/validation.xml</argument>
+=======
           <argument>/home/mariama/projetwari/vendor/symfony/form/Resources/config/validation.xml</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1133,10 +1325,17 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/validation.php</argument>
+    </service>
+    <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
+      <argument type="service" id=".1_PhpArrayAdapter~Dp2IZ5X"/>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
       <argument type="service" id=".1_PhpArrayAdapter~MTwkxlV"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory" public="false">
       <argument type="service" id=".service_locator.LtnrEkg"/>
@@ -1465,14 +1664,6 @@
         <argument>2048</argument>
       </call>
       <call method="addListener">
-        <argument>console.command</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
         <argument>kernel.exception</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
@@ -1755,7 +1946,11 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
+<<<<<<< HEAD
+        <argument key="cache_dir">/home/cheikhgaye/projet-fil-rouge/var/cache/dev</argument>
+=======
         <argument key="cache_dir">/home/mariama/projetwari/var/cache/dev</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1794,7 +1989,11 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1820,12 +2019,21 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
+<<<<<<< HEAD
+    <service id=".2_PhpArrayAdapter~WFUzLbO" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/annotations.php</argument>
+      <argument type="service" id="cache.annotations"/>
+      <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
+    </service>
+    <service id=".1_ArrayCache~WFUzLbO" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+=======
     <service id=".2_PhpArrayAdapter~0ge7CB9" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/mariama/projetwari/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
     <service id=".1_ArrayCache~0ge7CB9" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -1840,7 +2048,11 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
+      <argument type="service" id=".1_ArrayCache~WFUzLbO"/>
+=======
       <argument type="service" id=".1_ArrayCache~0ge7CB9"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -1850,12 +2062,20 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/annotations.php</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/annotations.php</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
+<<<<<<< HEAD
+      <argument type="service" id=".2_PhpArrayAdapter~WFUzLbO"/>
+=======
       <argument type="service" id=".2_PhpArrayAdapter~0ge7CB9"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor" public="false">
       <argument>false</argument>
@@ -1951,10 +2171,17 @@
           </service>
         </argument>
       </argument>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/serialization.php</argument>
+    </service>
+    <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/serialization.php</argument>
+=======
       <argument>/home/mariama/projetwari/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
       <argument>/home/mariama/projetwari/var/cache/dev/serialization.php</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2022,7 +2249,11 @@
     <service id="twig" class="Twig\Environment" public="true">
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
+<<<<<<< HEAD
+        <argument key="default_path">/home/cheikhgaye/projet-fil-rouge/templates</argument>
+=======
         <argument key="default_path">/home/mariama/projetwari/templates</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="exception_controller">twig.controller.exception::showAction</argument>
@@ -2030,7 +2261,11 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
+<<<<<<< HEAD
+        <argument key="cache">/home/cheikhgaye/projet-fil-rouge/var/cache/dev/twig</argument>
+=======
         <argument key="cache">/home/mariama/projetwari/var/cache/dev/twig</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2124,16 +2359,28 @@
       <argument type="service" id=".service_locator.lSIKWsr.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
+<<<<<<< HEAD
+        <argument key="/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+=======
         <argument key="/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
+      <argument type="collection">
+        <argument key="/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+      </argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
+=======
       <argument>/home/mariama/projetwari/src</argument>
       <argument type="collection">
         <argument key="/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
       <argument>/home/mariama/projetwari/templates</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -2144,6 +2391,54 @@
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>!Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>!Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>!Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>!Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>!ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
       <call method="addPath">
         <argument>/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views</argument>
@@ -2190,6 +2485,7 @@
       </call>
       <call method="addPath">
         <argument>/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -2215,7 +2511,11 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -2296,10 +2596,17 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+      <argument>%kernel.bundles_metadata%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/src</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
       <argument>%kernel.bundles_metadata%</argument>
       <argument>/home/mariama/projetwari/templates</argument>
       <argument>/home/mariama/projetwari/src</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -2393,7 +2700,11 @@
       <argument type="iterator">
         <argument key="security.firewall.map.context.dev" type="service" id=".security.request_matcher.Iy.T22O"/>
         <argument key="security.firewall.map.context.login" type="service" id=".security.request_matcher.HeUdK73"/>
+<<<<<<< HEAD
+        <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.Yon3Djr"/>
+=======
         <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.pGOe7mn"/>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </argument>
     </service>
     <service id="security.firewall.context" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext" public="false" abstract="true">
@@ -2452,10 +2763,17 @@
     </service>
     <service id="cache.security_expression_language" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>4EXwLaOYud</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>imO7teCC+9</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -2485,13 +2803,6 @@
         <argument type="service" id=".security.request_matcher.Ud1TEPV"/>
         <argument type="collection">
           <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.cRNYaJ1"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
         </argument>
         <argument>null</argument>
       </call>
@@ -2928,7 +3239,11 @@
     <service id="security.firewall.map.config.api" class="Symfony\Bundle\SecurityBundle\Security\FirewallConfig" public="false">
       <argument>api</argument>
       <argument>security.user_checker</argument>
+<<<<<<< HEAD
+      <argument>.security.request_matcher.Yon3Djr</argument>
+=======
       <argument>.security.request_matcher.pGOe7mn</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument>true</argument>
       <argument>true</argument>
       <argument>security.user.provider.concrete.app_user_provider</argument>
@@ -2941,8 +3256,13 @@
       </argument>
       <argument>null</argument>
     </service>
+<<<<<<< HEAD
+    <service id=".security.request_matcher.Yon3Djr" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/api/f</argument>
+=======
     <service id=".security.request_matcher.pGOe7mn" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
       <argument>^/api/u</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="security.authentication.provider.guard.api" class="Symfony\Component\Security\Guard\Provider\GuardAuthenticationProvider" public="false">
       <argument type="iterator">
@@ -2993,9 +3313,6 @@
     </service>
     <service id=".security.request_matcher.Ud1TEPV" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
       <argument>^/api/login</argument>
-    </service>
-    <service id=".security.request_matcher.cRNYaJ1" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api</argument>
     </service>
     <service id="security.command.user_password_encoder" class="Symfony\Bundle\SecurityBundle\Command\UserPasswordEncoderCommand" public="false">
       <tag name="console.command" command="security:encode-password"/>
@@ -3165,7 +3482,11 @@
       <argument type="collection"/>
       <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
     </service>
+<<<<<<< HEAD
+    <service id=".1_ServiceLocator~pcKsjta" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+=======
     <service id=".1_ServiceLocator~FUFVASJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer" public="false">
@@ -3325,7 +3646,11 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
+<<<<<<< HEAD
+        <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/doctrine/orm/Proxies</argument>
+=======
         <argument>/home/mariama/projetwari/var/cache/dev/doctrine/orm/Proxies</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3355,7 +3680,11 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
+<<<<<<< HEAD
+        <argument>/home/cheikhgaye/projet-fil-rouge/src/Entity</argument>
+=======
         <argument>/home/mariama/projetwari/src/Entity</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -3366,17 +3695,29 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
+        <argument>sf_orm_default_0f69cf460f6aacd315fa4f559e45c364f64086ef1b84f5edfd1f82bcb0156ed3</argument>
+=======
         <argument>sf_orm_default_5c3651e856847cb2cb18fd47f9951d3291e34c09ca1dda0e58b3910e004289d0</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
+        <argument>sf_orm_default_0f69cf460f6aacd315fa4f559e45c364f64086ef1b84f5edfd1f82bcb0156ed3</argument>
+=======
         <argument>sf_orm_default_5c3651e856847cb2cb18fd47f9951d3291e34c09ca1dda0e58b3910e004289d0</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
+        <argument>sf_orm_default_0f69cf460f6aacd315fa4f559e45c364f64086ef1b84f5edfd1f82bcb0156ed3</argument>
+=======
         <argument>sf_orm_default_5c3651e856847cb2cb18fd47f9951d3291e34c09ca1dda0e58b3910e004289d0</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver">
@@ -3583,28 +3924,49 @@
     </service>
     <service id="api_platform.cache.route_name_resolver" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>cA+Keuj3bg</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>bi9wrfWvrs</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.identifiers_extractor" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>N-ZMHWCUGJ</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>qxNwCnCc1g</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.subresource_operation_factory" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>GsCMi-7fta</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>68sjlaavVN</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -3691,19 +4053,33 @@
     </service>
     <service id="api_platform.cache.metadata.resource" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>aJSXSQPI8N</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>-9RIBtjAUG</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.metadata.property" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
+<<<<<<< HEAD
+      <argument>HmnQ5vAbkW</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache/dev/pools</argument>
+=======
       <argument>6EkYK-25nA</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/mariama/projetwari/var/cache/dev/pools</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -4091,8 +4467,13 @@
     <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/templates</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
       <argument>/home/mariama/projetwari/templates</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder" public="false">
       <argument>App</argument>
@@ -4150,7 +4531,11 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
       <argument type="service" id="maker.generator"/>
     </service>
     <service id="maker.maker.make_fixtures" class="Symfony\Bundle\MakerBundle\Maker\MakeFixtures" public="false">
@@ -4200,36 +4585,76 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration" public="false">
       <tag name="maker.command"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+    </service>
+    <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
+      <tag name="console.command" command="server:run"/>
+      <argument>/home/cheikhgaye/projet-fil-rouge/public</argument>
+      <argument>dev</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
       <argument>/home/mariama/projetwari</argument>
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
       <argument>/home/mariama/projetwari/public</argument>
       <argument>dev</argument>
+<<<<<<< HEAD
       <argument>/home/mariama/projetwari</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
       <call method="setName">
         <argument>server:run</argument>
       </call>
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/public</argument>
+      <argument>dev</argument>
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
       <argument>/home/mariama/projetwari/public</argument>
       <argument>dev</argument>
+<<<<<<< HEAD
       <argument>/home/mariama/projetwari</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
+<<<<<<< HEAD
       <argument>/home/mariama/projetwari</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
+<<<<<<< HEAD
       <argument>/home/mariama/projetwari</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
       <call method="setName">
         <argument>server:status</argument>
       </call>
@@ -4613,6 +5038,9 @@
     <service id="lexik_jwt_authentication.security.jwt_user_provider" class="Lexik\Bundle\JWTAuthenticationBundle\Security\User\JWTUserProvider" public="false">
       <argument></argument>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AdminPartController" class="App\Controller\AdminPartController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AdminPartController" class="App\Controller\AdminPartController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\AdminPartController" class="App\Controller\AdminPartController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -4989,6 +5417,12 @@
         <argument key="session" type="service" id="session" on-invalid="ignore"/>
         <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
       </argument>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Controller\AdminPartController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\AdminPartController"/>
+      <argument>App\Controller\AdminPartController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
     </service>
     <service id=".service_locator.CDOTD6..App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>
