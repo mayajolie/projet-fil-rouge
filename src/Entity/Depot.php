@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -25,7 +23,6 @@ class Depot
      */
     private $montant;
 
-  
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\CompteBancaire", inversedBy="depots")
      */
@@ -35,8 +32,6 @@ class Depot
      * @ORM\Column(type="datetime")
      */
     private $date_depot;
-
-
 
     public function getId(): ?int
     {
@@ -54,8 +49,6 @@ class Depot
 
         return $this;
     }
-
-  
 
     public function getComptb(): ?CompteBancaire
     {
@@ -80,9 +73,4 @@ class Depot
 
         return $this;
     }
-
- 
-  
-
-   
 }

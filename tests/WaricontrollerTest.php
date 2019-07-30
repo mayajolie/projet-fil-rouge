@@ -10,17 +10,17 @@ class WaricontrollerTest extends WebTestCase
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/api/partenaires');
-         $jsonstring = "[
-                  {
-                     \"id\": 1,
-                     \"raisonSocial\": \"sonatel\",
-                     \"ninea\": \"sona1235874587\",
-                     \"adresse\": \"mermoz\",
-                     \"telephone\": 338645897,
-                     \"compteBancaires\": [],
-                     \"etat\": \"debloquer\"
-                 }
-              ]";
+        $jsonstring = '[
+            {
+                "id": 1,
+                "raisonSocial": "sonatel",
+                "ninea": "sona1235874587",
+                "adresse": "mermoz",
+                "telephone": 338645897,
+                "compteBancaires": [],
+                "etat": "debloquer"
+            }
+            ]';
         $rep = $client->getResponse();
         $this->assertSame(200, $client->getResponse()->getStatuscode());
         $this->assertJsonStringEqualsJsonString($jsonstring, $rep->getContent());

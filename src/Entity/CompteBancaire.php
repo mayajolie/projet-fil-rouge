@@ -30,8 +30,6 @@ class CompteBancaire
      */
     private $solde;
 
-
-
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Partenaires", inversedBy="compteBancaires")
      * @ORM\JoinColumn(nullable=false)
@@ -47,8 +45,6 @@ class CompteBancaire
     {
         $this->depots = new ArrayCollection();
     }
-
-   
 
     public function getId(): ?int
     {
@@ -121,5 +117,4 @@ class CompteBancaire
 
         return $this;
     }
-
 }
