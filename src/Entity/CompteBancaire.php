@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -28,16 +30,25 @@ class CompteBancaire
      */
     private $solde;
 
-    /**
-     * @ORM\Column(type="date")
-     */
-    private $date_depot;
+
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Partenaires", inversedBy="compteBancaires")
      * @ORM\JoinColumn(nullable=false)
      */
     private $partenaire;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Depot", mappedBy="comptb")
+     */
+    private $depots;
+
+    public function __construct()
+    {
+        $this->depots = new ArrayCollection();
+    }
+
+   
 
     public function getId(): ?int
     {
@@ -68,18 +79,6 @@ class CompteBancaire
         return $this;
     }
 
-    public function getDateDepot(): ?\DateTimeInterface
-    {
-        return $this->date_depot;
-    }
-
-    public function setDateDepot(\Date $date_depot): self
-    {
-        $this->date_depot = $date_depot;
-
-        return $this;
-    }
-
     public function getPartenaire(): ?Partenaires
     {
         return $this->partenaire;
@@ -91,4 +90,36 @@ class CompteBancaire
 
         return $this;
     }
+
+    /**
+     * @return Collection|Depot[]
+     */
+    public function getDepots(): Collection
+    {
+        return $this->depots;
+    }
+
+    public function addDepot(Depot $depot): self
+    {
+        if (!$this->depots->contains($depot)) {
+            $this->depots[] = $depot;
+            $depot->setComptb($this);
+        }
+
+        return $this;
+    }
+
+    public function removeDepot(Depot $depot): self
+    {
+        if ($this->depots->contains($depot)) {
+            $this->depots->removeElement($depot);
+            // set the owning side to null (unless already changed)
+            if ($depot->getComptb() === $this) {
+                $depot->setComptb(null);
+            }
+        }
+
+        return $this;
+    }
+
 }

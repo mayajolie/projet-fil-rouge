@@ -7,8 +7,14 @@ use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Partenaires;
+use App\Entity\Depot;
 use App\Entity\CompteBancaire;
 use App\Form\ComptBType;
+<<<<<<< HEAD
+=======
+use App\Form\DepotType;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
 use Symfony\Component\HttpFoundation\JsonResponse;
 use FOS\RestBundle\Controller\Annotations as Rest; // alias pour toutes les annotations
 use Doctrine\ORM\EntityManagerInterface;
@@ -102,4 +108,48 @@ class WariController extends FOSRestController
 
         return $this->handleView($this->view(['status' => 'ok'], Response::HTTP_CREATED));
     }
+<<<<<<< HEAD
+=======
+
+        /**
+     * @Route("/depot", name="depot", methods={"POST"})
+     */
+    public function Depot (Request $request,  EntityManagerInterface $entityManager)
+    {
+        $values = json_decode($request->getContent());
+        if(isset($values->montant)) {
+            $depot = new Depot();
+            $depot->setMontant($values->montant);
+            $depot->setDateDepot(new \DateTime());
+            //recuperation de l'id du partenaire
+            $repo=$this->getDoctrine()->getRepository(CompteBancaire::class);
+            $partenaire=$repo->find($values->comptb);
+            $depot->setComptb($partenaire);
+            //incrementant du solde du partenaire du montant du depot
+            $partenaire->setSolde($partenaire->getSolde()+$values->montant);
+            //enregistrement au niveau du partenaire
+            $entityManager->persist($partenaire);
+
+            //enregistrement au niveau du depot
+            $entityManager->persist($depot);
+            $entityManager->flush();
+
+            $data = [
+                'status' => 201,
+                'message' => 'Le depot  a été enregistré'
+            ];
+
+            return new JsonResponse($data, 201);
+        }
+        $data = [
+            'status' => 500,
+            'message' => 'Vous devez renseigner les champs montants et idPartenaire'
+        ];
+        return new JsonResponse($data, 500);
+
+    }
+
+
+    
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
 }

@@ -18,7 +18,6 @@ class ComptBType extends AbstractType
         $builder
             ->add('numeroCompte')
             ->add('solde')
-            ->add('date_depot')
             ->add('partenaire' ,EntityType::class,[
                 'class'=>Partenaires::class
             ])

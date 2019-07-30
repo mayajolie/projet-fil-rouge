@@ -422,6 +422,10 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Repository\DepotRepository" class="App\Repository\DepotRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -3179,7 +3183,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.DcmoodG"/>
+      <argument type="service" id=".service_locator.qA_qf0L"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4199,7 +4203,24 @@
       <tag name="console.command" command="server:run"/>
       <argument>/home/cheikhgaye/projet-fil-rouge/public</argument>
       <argument>dev</argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari</argument>
+    </service>
+    <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
+      <tag name="console.command" command="server:run"/>
+      <argument>/home/mariama/projetwari/public</argument>
+      <argument>dev</argument>
+<<<<<<< HEAD
+      <argument>/home/mariama/projetwari</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
       <call method="setName">
         <argument>server:run</argument>
       </call>
@@ -4208,21 +4229,58 @@
       <tag name="console.command" command="server:start"/>
       <argument>/home/cheikhgaye/projet-fil-rouge/public</argument>
       <argument>dev</argument>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari/public</argument>
+      <argument>dev</argument>
+<<<<<<< HEAD
+      <argument>/home/mariama/projetwari</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/mariama/projetwari</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
+<<<<<<< HEAD
       <argument>/home/cheikhgaye/projet-fil-rouge</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/mariama/projetwari</argument>
+=======
+<<<<<<< HEAD
+      <argument>/home/cheikhgaye/projet-fil-rouge/var/cache</argument>
+=======
+      <argument>/home/mariama/projetwari/var/cache</argument>
+>>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df
+>>>>>>> d5a8df6f0551cd1bc2a4c87ab45ed275e01f61a7
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
       <call method="setName">
         <argument>server:status</argument>
       </call>
@@ -4620,6 +4678,8 @@
     <service id=".abstract.instanceof.App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CompteBancaireRepository" class="App\Repository\CompteBancaireRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CompteBancaireRepository" class="App\Repository\CompteBancaireRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\DepotRepository" class="App\Repository\DepotRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\DepotRepository" class="App\Repository\DepotRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\PartenairesRepository" class="App\Repository\PartenairesRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
@@ -4810,12 +4870,19 @@
         <argument key="validator" type="service" id="validator"/>
       </argument>
     </service>
+    <service id=".service_locator.ZIsCxOI" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
     <service id=".service_locator.l2alLEu" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="viewhandler" type="service" id="fos_rest.view_handler.default"/>
       </argument>
     </service>
+<<<<<<< HEAD
     <service id=".service_locator.Ppx1O2A" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4825,6 +4892,19 @@
         <argument key="App\Controller\WariController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\SecurityController:register" type="service" id=".service_locator.9cYN13S"/>
         <argument key="App\Controller\WariController:ajoutP" type="service" id=".service_locator.k22NER8"/>
+=======
+    <service id=".service_locator.F66Nd9A" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Controller\SecurityController::register" type="service" id=".service_locator.9cYN13S"/>
+        <argument key="App\Controller\WariController::AjoutP" type="service" id=".service_locator.k22NER8"/>
+        <argument key="App\Controller\WariController::Depot" type="service" id=".service_locator.ZIsCxOI"/>
+        <argument key="App\Controller\WariController::bloquerPartenaie" type="service" id=".service_locator.V84UHq3"/>
+        <argument key="App\Controller\WariController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+        <argument key="App\Controller\SecurityController:register" type="service" id=".service_locator.9cYN13S"/>
+        <argument key="App\Controller\WariController:AjoutP" type="service" id=".service_locator.k22NER8"/>
+        <argument key="App\Controller\WariController:Depot" type="service" id=".service_locator.ZIsCxOI"/>
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
         <argument key="App\Controller\WariController:bloquerPartenaie" type="service" id=".service_locator.V84UHq3"/>
         <argument key="App\Controller\WariController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
       </argument>
@@ -4920,10 +5000,11 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.DcmoodG" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.qA_qf0L" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\CompteBancaireRepository" type="service" id="App\Repository\CompteBancaireRepository"/>
+        <argument key="App\Repository\DepotRepository" type="service" id="App\Repository\DepotRepository"/>
         <argument key="App\Repository\PartenairesRepository" type="service" id="App\Repository\PartenairesRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
@@ -5091,12 +5172,20 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.Ppx1O2A"/>
+=======
+      <argument type="service" id=".service_locator.F66Nd9A"/>
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.Ppx1O2A"/>
+=======
+      <argument type="service" id=".service_locator.F66Nd9A"/>
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -5446,7 +5535,11 @@
     <service id="lexik_jwt_authentication.encoder" alias="lexik_jwt_authentication.encoder.lcobucci" public="true"/>
     <service id="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" alias="lexik_jwt_authentication.encoder.lcobucci"/>
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
+<<<<<<< HEAD
     <service id="argument_resolver.controller_locator" alias=".service_locator.Ppx1O2A"/>
+=======
+    <service id="argument_resolver.controller_locator" alias=".service_locator.F66Nd9A"/>
+>>>>>>> 4fc526316cd2bf13e183261cb5c373d1fc8ea2fc
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>
