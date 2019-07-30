@@ -1483,11 +1483,13 @@
         <argument key="security.authentication.guard_handler" type="service" id="security.authentication.guard_handler" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.anonymous" type="service" id="security.authentication.listener.anonymous" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.anonymous.login" type="service" id="security.authentication.listener.anonymous.login" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.listener.basic.api" type="service" id="security.authentication.listener.basic.api" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.guard.api" type="service" id="security.authentication.listener.guard.api" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.listener.json.login" type="service" id="security.authentication.listener.json.login" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.manager" type="service" id="security.authentication.manager" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.anonymous" type="service" id="security.authentication.provider.anonymous" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.anonymous.login" type="service" id="security.authentication.provider.anonymous.login" on-invalid="ignore_uninitialized"/>
+        <argument key="security.authentication.provider.dao.api" type="service" id="security.authentication.provider.dao.api" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.dao.login" type="service" id="security.authentication.provider.dao.login" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.provider.guard.api" type="service" id="security.authentication.provider.guard.api" on-invalid="ignore_uninitialized"/>
         <argument key="security.authentication.retry_entry_point" type="service" id="security.authentication.retry_entry_point" on-invalid="ignore_uninitialized"/>
@@ -3042,6 +3044,7 @@
         <argument type="service" id="security.authentication.provider.dao.login"/>
         <argument type="service" id="security.authentication.provider.anonymous.login"/>
         <argument type="service" id="security.authentication.provider.guard.api"/>
+        <argument type="service" id="security.authentication.provider.dao.api"/>
       </argument>
       <argument>true</argument>
       <call method="setEventDispatcher">
@@ -3106,7 +3109,7 @@
       <argument type="iterator">
         <argument key="security.firewall.map.context.dev" type="service" id=".security.request_matcher.Iy.T22O"/>
         <argument key="security.firewall.map.context.login" type="service" id=".security.request_matcher.HeUdK73"/>
-        <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.Yon3Djr"/>
+        <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.p4VlLPC"/>
       </argument>
     </service>
     <service id="security.firewall.context" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext" public="false" abstract="true">
@@ -3641,7 +3644,7 @@
     <service id="security.firewall.map.config.api" class="Symfony\Bundle\SecurityBundle\Security\FirewallConfig" public="false">
       <argument>api</argument>
       <argument>security.user_checker</argument>
-      <argument>.security.request_matcher.Yon3Djr</argument>
+      <argument>.security.request_matcher.p4VlLPC</argument>
       <argument>true</argument>
       <argument>true</argument>
       <argument>security.user.provider.concrete.app_user_provider</argument>
@@ -3651,11 +3654,12 @@
       <argument>null</argument>
       <argument type="collection">
         <argument>guard</argument>
+        <argument>http_basic</argument>
       </argument>
       <argument>null</argument>
     </service>
-    <service id=".security.request_matcher.Yon3Djr" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api/f</argument>
+    <service id=".security.request_matcher.p4VlLPC" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/api</argument>
     </service>
     <service id="security.authentication.provider.guard.api" class="Symfony\Component\Security\Guard\Provider\GuardAuthenticationProvider" public="false">
       <argument type="iterator">
@@ -3675,6 +3679,23 @@
       </argument>
       <argument type="service" id="logger" on-invalid="null"/>
     </service>
+    <service id="security.authentication.provider.dao.api" class="Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider" public="false">
+      <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+      <argument type="service" id="security.user_checker"/>
+      <argument>api</argument>
+      <argument type="service" id="security.encoder_factory.generic"/>
+      <argument>true</argument>
+    </service>
+    <service id="security.authentication.listener.basic.api" class="Symfony\Component\Security\Http\Firewall\BasicAuthenticationListener" public="false">
+      <argument type="service" id="security.token_storage"/>
+      <argument type="service" id="security.authentication.manager"/>
+      <argument>api</argument>
+      <argument type="service" id="lexik_jwt_authentication.security.guard.jwt_token_authenticator"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+      <call method="setSessionAuthenticationStrategy">
+        <argument type="service" id="security.authentication.session_strategy_noop"/>
+      </call>
+    </service>
     <service id="security.exception_listener.api" class="Symfony\Component\Security\Http\Firewall\ExceptionListener" public="false">
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.authentication.trust_resolver"/>
@@ -3690,6 +3711,7 @@
       <argument type="iterator">
         <argument type="service" id="security.channel_listener"/>
         <argument type="service" id="security.authentication.listener.guard.api"/>
+        <argument type="service" id="security.authentication.listener.basic.api"/>
         <argument type="service" id="security.access_listener"/>
       </argument>
       <argument type="service" id="security.exception_listener.api"/>

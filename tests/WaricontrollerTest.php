@@ -8,7 +8,11 @@ class WaricontrollerTest extends WebTestCase
 {
     public function testIndex()
     {
-        $client = static::createClient();
+        $client = static::createClient([],
+            ['PHP_AUTH_USER' =>"mayajolie",
+            'PHP_AUTH_PW'=>"mayajolie"]
+        );
+
         $crawler = $client->request('GET', '/api/partenaires');
         $jsonstring = "[
             {
@@ -17,11 +21,7 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"sona1235874587\",
                 \"adresse\": \"mermoz\",
                 \"telephone\": 338645897,
-                \"compteBancaires\": [
-                    \"/api/compte_bancaires/1\"
-                ],
                 \"etat\": \"debloquer\",
-                \"users\": []
             },
             {
                 \"id\": 2,
@@ -29,7 +29,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"tigo1235874587\",
                 \"adresse\": \"sacre-coeur\",
                 \"telephone\": 338645897,
-                \"compteBancaires\": [],
                 \"etat\": \"bloquer\",
                 
             },
@@ -39,7 +38,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"tigo1235874587\",
                 \"adresse\": \"sacre-coeur\",
                 \"telephone\": 338645897,
-                \"compteBancaires\": [],
                 \"etat\": \"debloquer\",
             },
             {
@@ -48,7 +46,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"bamba1235874587\",
                 \"adresse\": \"Nord-Foire\",
                 \"telephone\": 338645897,
-                \"compteBancaires\": [],
                 \"etat\": \"bloquer\",
             },
             {
@@ -66,7 +63,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"jolie1235874587\",
                 \"adresse\": \"Ouest-Foire\",
                 \"telephone\": 338685897,
-                \"compteBancaires\": [],
                 \"etat\": \"bloquer\",
             },
             {
@@ -75,7 +71,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"jolie1235874587\",
                 \"adresse\": \"Ouest-Foire\",
                 \"telephone\": 338685897,
-                \"compteBancaires\": [],
                 \"etat\": \"debloquer\",
             },
             {
@@ -84,7 +79,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"jolie1235874587\",
                 \"adresse\": \"Ouest-Foire\",
                 \"telephone\": 338685897,
-                \"compteBancaires\": [],
                 \"etat\": \"debloquer\",
             },
             {
@@ -93,7 +87,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"hhhtgne2015\",
                 \"adresse\": \"Oukam\",
                 \"telephone\": 339584621,
-                \"compteBancaires\": [],
                 \"etat\": \"bloquer\",
             },
             {
@@ -102,7 +95,6 @@ class WaricontrollerTest extends WebTestCase
                 \"ninea\": \"201jj2568\",
                 \"adresse\": \"keur massar\",
                 \"telephone\": 339864752,
-                \"compteBancaires\": [],
                 \"etat\": \"debloquer\",
             }
              ]";
@@ -113,7 +105,11 @@ class WaricontrollerTest extends WebTestCase
 
     public function testAddPartenaireok()
     {
-        $client = static::createClient();
+        $client = static::createClient([],
+            ['PHP_AUTH_USER' =>"mayajolie",
+            'PHP_AUTH_PW'=>"mayajolie"]
+        
+        );
         $crawler = $client->request('POST', '/api/ajout',[],[],
         ['CONTENT_TYPE' => 'application/json'],
         '{"raisonSocial":"gayeSA","ninea": "ga33","adresse": "Ouakam","telephone": 333658401,"etat": "debloquer"}');
@@ -123,10 +119,13 @@ class WaricontrollerTest extends WebTestCase
     }
     public function testAddPartenaire()
     {
-        $client = static::createClient();
+        $client = static::createClient([],
+            ['PHP_AUTH_USER' => "mayajolie",
+            'PHP_AUTH_PW'=> "mayajolie"]
+        );
         $crawler = $client->request('POST', '/api/ajout',[],[],
         ['CONTENT_TYPE' => 'application/json'],
-        '{"raisonSocial":"ngomSA","ninea": "","adresse": "Mermoz","telephone": "cheikh","etat": "debloquer"}');
+        '{"raisonSocial":"ngomSA","ninea": "","adresse": "Mermoz","telephone": ,"etat": "debloquer"}');
         $rep = $client->getResponse();
             var_dump($rep);
         $this->assertSame(400, $client->getResponse()->getStatusCode());
