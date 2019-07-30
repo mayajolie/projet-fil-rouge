@@ -65,10 +65,6 @@ class __TwigTemplate_17ba3813c158ce67fcd1881e75e5ee15b18ff6e32b17d3cc850437095ab
     <?php if (strlen(\$value) > 0): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?>
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-<<<<<<< HEAD:var/cache/dev/twig/fa/fac2fd3f93823eccd6249c4628e90b88ac7096a0adb61866ea718c54253f8cbd.php
 ", "@Framework/Form/checkbox_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
-=======
-", "@Framework/Form/checkbox_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/ee/ee256a9b19c8040bd02eca3ccd1f3f56521d637b7b8a87e31441978f4c5eb821.php
     }
 }

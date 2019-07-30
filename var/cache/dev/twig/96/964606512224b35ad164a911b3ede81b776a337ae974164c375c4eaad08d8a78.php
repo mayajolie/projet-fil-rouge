@@ -63,10 +63,6 @@ class __TwigTemplate_a9ca212cd6430e197e7d50f1f7d754c9331f66feb00920202226da635b6
     public function getSourceContext()
     {
         return new Source("{{ include('@Twig/Exception/exception.xml.twig', { exception: exception }) }}
-<<<<<<< HEAD:var/cache/dev/twig/96/964606512224b35ad164a911b3ede81b776a337ae974164c375c4eaad08d8a78.php
 ", "@Twig/Exception/exception.atom.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/exception.atom.twig");
-=======
-", "@Twig/Exception/exception.atom.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/exception.atom.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/a6/a6ec5920f80ec3cde7597882d5298111c1f49e986648403a45c7afd388f601db.php
     }
 }

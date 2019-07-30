@@ -73,10 +73,6 @@ class __TwigTemplate_78ee0c86709b0327fed431923e875ea2cad4c93f98b24865562203f6526
 <?php printf('%s=\"%s\" ', \$view->escape(\$k), \$view->escape(\$v)) ?>
 <?php endif ?>
 <?php endforeach ?>
-<<<<<<< HEAD:var/cache/dev/twig/28/28ba769535cf659e79322c74b96d818cdb391ec12cb897a8f0efcf8a34982ab9.php
 ", "@Framework/Form/attributes.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/attributes.html.php");
-=======
-", "@Framework/Form/attributes.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/attributes.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/7c/7cf5c0249e564adf024121393751b79b1e90776c811d4a325c9714d404fa9e5f.php
     }
 }

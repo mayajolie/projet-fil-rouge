@@ -67,10 +67,6 @@ class __TwigTemplate_6e644787631274996abb2637aff6d931ca6ed164dd7a41fd9a9d7cda8ac
 <?php if (\$form_method !== \$method): ?>
     <input type=\"hidden\" name=\"_method\" value=\"<?php echo \$view->escape(\$method) ?>\" />
 <?php endif ?>
-<<<<<<< HEAD:var/cache/dev/twig/6b/6bdcd39db577c454948ae2950658c4f7a5dc5f26faee2aa491c2f3d16585aa50.php
 ", "@Framework/Form/form_start.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_start.html.php");
-=======
-", "@Framework/Form/form_start.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_start.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/3b/3b14c8c70416940be51a7373f31bc3df683ab5070b529e56beed02cb22c5fb88.php
     }
 }

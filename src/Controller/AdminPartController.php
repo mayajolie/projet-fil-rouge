@@ -5,6 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
+// alias pour toutes les annotations
+
 class AdminPartController extends AbstractController
 {
     /**
@@ -16,4 +18,5 @@ class AdminPartController extends AbstractController
             'controller_name' => 'AdminPartController',
         ]);
     }
+
 }

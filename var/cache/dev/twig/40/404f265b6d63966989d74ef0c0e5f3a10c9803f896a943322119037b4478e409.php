@@ -198,10 +198,6 @@ class __TwigTemplate_8879c8dfa5412ce4c5527432b4404e0ba8d28a505f6222fc99a0e0b439a
         })|raw }}
     </div>
 {% endif %}
-<<<<<<< HEAD:var/cache/dev/twig/40/404f265b6d63966989d74ef0c0e5f3a10c9803f896a943322119037b4478e409.php
 ", "@Twig/Exception/trace.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
-=======
-", "@Twig/Exception/trace.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/b8/b8841b3bcc2a533a722a7c9fc8c2a126547cea39fac3c6ab2621c16bff065b82.php
     }
 }

@@ -389,10 +389,6 @@ col-sm-10
         </div>{#--#}
     </div>
 {%- endblock checkbox_row %}
-<<<<<<< HEAD:var/cache/dev/twig/2c/2c1abf9f586bc3f53c938e774733c1395d57b626562246e37f86bce05b8a4a39.php
 ", "bootstrap_3_horizontal_layout.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_3_horizontal_layout.html.twig");
-=======
-", "bootstrap_3_horizontal_layout.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_3_horizontal_layout.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/84/84a5f6f89eb5375f76379ad5e045821d4601a34d865d43ab548093c5f32b6b05.php
     }
 }

@@ -57,10 +57,6 @@ class __TwigTemplate_31c0788bc15b175021c3c2b262e20414e5adc0d288d0f022614c0e1e3a2
     public function getSourceContext()
     {
         return new Source("<?php if (\$form->vars['multipart']): ?>enctype=\"multipart/form-data\"<?php endif ?>
-<<<<<<< HEAD:var/cache/dev/twig/d7/d7ed444499329c0cc59f0d213aa91a3bb40839c57de421c7221f9e6df5166ae0.php
 ", "@Framework/Form/form_enctype.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_enctype.html.php");
-=======
-", "@Framework/Form/form_enctype.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_enctype.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/39/3975c62b61f3d4956f9324c19a3a5464f1689eadf9c8ee500ff39932153e37b0.php
     }
 }

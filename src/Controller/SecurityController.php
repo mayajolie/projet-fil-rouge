@@ -10,55 +10,58 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Serializer\SerializerInterface;
-use Symfony\Component\Validator\Validator\ValidatorInterface;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * @Route("/api")
  */
-
 class SecurityController extends AbstractController
 {
-    
     /**
      * @Route("/register", name="register", methods={"POST"})
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder,SerializerInterface $serializer, EntityManagerInterface $entityManager)
+    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, SerializerInterface $serializer, EntityManagerInterface $entityManager)
     {
-            
         $values = json_decode($request->getContent());
-       if(isset($values->username, $values->password)) {
+        if (isset($values->username, $values->password)) {
             $user = new User();
             $user->setUsername($values->username);
             $user->setPassword($passwordEncoder->encodePassword($user, $values->password));
-            $user->setRoles(['ROLE_ADMIN']);
-            
+            $user->setRoles(['ROLE_UTLISATEUR']);
+            $user->setNom($values->nom);
+            $user->setPrenom($values->prenom);
+            $user->setAdresse($values->adresse);
+            $user->setTelephone($values->telephone);
+            $user->setEmail($values->email);
+            $user->setEtat($values->etat);
+
             $entityManager->persist($user);
             $entityManager->flush();
 
             $data = [
-        
                 'status' => 201,
-                'message' => 'L\'utilisateur a été créé'
+                'message' => 'L\'utilisateur a été créé',
             ];
 
             return new JsonResponse($data, 201);
         }
-        $data =[
+        $data = [
             'status' => 500,
-            'message' => 'Vous devez renseigner les clés username et password'
+            'message' => 'Vous devez renseigner les clés username et password',
         ];
+
         return new JsonResponse($data, 500);
     }
-      /**
+
+    /**
      * @Route("/loginchek", name="login", methods={"POST","GET"})
      */
     public function login(Request $request)
     {
         $user = $this->getUser();
+
         return $this->json([
             'username' => $user->getUsername(),
-            'roles' => $user->getRoles()
+            'roles' => $user->getRoles(),
         ]);
-    } 
+    }
 }

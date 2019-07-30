@@ -63,10 +63,6 @@ class __TwigTemplate_66c55bcf06c6b05d4bae6bcd838ad1cf93d922a7983817528cc4163a28a
 <?php echo \$view['form']->rest(\$form) ?>
 <?php endif ?>
 </form>
-<<<<<<< HEAD:var/cache/dev/twig/23/2333aaa64a468dc9be4c18d342448793713ad5f64d7f8fb1835a3b3bd866ed9c.php
 ", "@Framework/Form/form_end.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_end.html.php");
-=======
-", "@Framework/Form/form_end.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_end.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/1c/1c3ed119729d5f191ad404eecd2fa0f99a6dde3c4d4cff66e70893d104a611d9.php
     }
 }

@@ -63,10 +63,6 @@ class __TwigTemplate_f7890720e0d79bf6c7a7a59439373402166e00f1d9cb82ce2d6582c187f
     ? strtr(\$label_format, ['%name%' => \$name, '%id%' => \$id])
     : \$view['form']->humanize(\$name); } ?>
 <button type=\"<?php echo isset(\$type) ? \$view->escape(\$type) : 'button' ?>\" <?php echo \$view['form']->block(\$form, 'button_attributes') ?>><?php echo \$view->escape(false !== \$translation_domain ? \$view['translator']->trans(\$label, \$label_translation_parameters, \$translation_domain) : \$label) ?></button>
-<<<<<<< HEAD:var/cache/dev/twig/b2/b250acaeb947e8f6f72130cc6576ac2e876f56b6f7d14e84d63b9c19790b8c19.php
 ", "@Framework/Form/button_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/button_widget.html.php");
-=======
-", "@Framework/Form/button_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/button_widget.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/54/54432cba20a60b7e40d90f1412a3f1c940bd0aacbd0fee7293e669e45c332d84.php
     }
 }

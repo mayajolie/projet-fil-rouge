@@ -975,10 +975,6 @@ $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBl
     {%- set force_error = true -%}
     {{- block('form_row') -}}
 {%- endblock datetime_row %}
-<<<<<<< HEAD:var/cache/dev/twig/7b/7bc3357bbaa2eb47d94001fd2e6f05d98fa9cc0f5ee3e01f31a565cebe2dcb37.php
 ", "bootstrap_base_layout.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_base_layout.html.twig");
-=======
-", "bootstrap_base_layout.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form/bootstrap_base_layout.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/65/65e79e58e2f4f49a495e4178e743ffe58f86be8c3bae6406c1cb432f36a5bd8a.php
     }
 }

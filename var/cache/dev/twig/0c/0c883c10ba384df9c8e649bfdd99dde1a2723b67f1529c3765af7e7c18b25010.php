@@ -469,10 +469,6 @@ header .container { display: flex; justify-content: space-between; }
     .hidden-xs-down { display: initial; }
     .help-link { margin-left: 30px; }
 }
-<<<<<<< HEAD:var/cache/dev/twig/0c/0c883c10ba384df9c8e649bfdd99dde1a2723b67f1529c3765af7e7c18b25010.php
 ", "@Twig/exception.css.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/exception.css.twig");
-=======
-", "@Twig/exception.css.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/exception.css.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/8b/8b469425bd15b187e522d2b22f5c0940d40520135efcdfc94d9079da8ad9962d.php
     }
 }

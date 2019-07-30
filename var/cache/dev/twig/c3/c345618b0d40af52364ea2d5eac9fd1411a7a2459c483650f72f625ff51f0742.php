@@ -57,10 +57,6 @@ class __TwigTemplate_f2a56eee4fc51f71f8a9682fc27b304978a057fe8692213443df7b01f72
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->widget(\$form) ?>
-<<<<<<< HEAD:var/cache/dev/twig/c3/c345618b0d40af52364ea2d5eac9fd1411a7a2459c483650f72f625ff51f0742.php
 ", "@Framework/Form/hidden_row.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/hidden_row.html.php");
-=======
-", "@Framework/Form/hidden_row.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/hidden_row.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/bb/bba96db32cff712cb7fa707cc7e5d25ad98db8097be9499ccf09bd7d6f1db2c9.php
     }
 }

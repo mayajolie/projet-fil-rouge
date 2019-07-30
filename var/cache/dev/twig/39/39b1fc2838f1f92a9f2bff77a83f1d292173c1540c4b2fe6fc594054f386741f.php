@@ -67,10 +67,6 @@ class __TwigTemplate_a5a95e33df77a62d1b42926e38a11f931431add9aaa303f9d3dc6bb174d
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
-<<<<<<< HEAD:var/cache/dev/twig/39/39b1fc2838f1f92a9f2bff77a83f1d292173c1540c4b2fe6fc594054f386741f.php
 ", "@Framework/FormTable/button_row.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/FormTable/button_row.html.php");
-=======
-", "@Framework/FormTable/button_row.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/FormTable/button_row.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/8c/8c256aa581708df1f9cc10fadbbf9091ff2b9b515cf3ab6ff12088c7713ee653.php
     }
 }

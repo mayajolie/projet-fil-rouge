@@ -8,7 +8,7 @@ return [
     'register' => [[], ['_controller' => 'App\\Controller\\SecurityController::register'], [], [['text', '/api/register']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/api/loginchek']], [], []],
     'find_partenaires' => [[], ['_controller' => 'App\\Controller\\WariController::index'], [], [['text', '/api/partenaires']], [], []],
-    'ajout' => [[], ['_controller' => 'App\\Controller\\WariController::AjoutP'], [], [['text', '/api/ajout']], [], []],
+    'ajout' => [[], ['_controller' => 'App\\Controller\\WariController::ajoutP'], [], [['text', '/api/ajout']], [], []],
     'bloquer' => [['id'], ['_controller' => 'App\\Controller\\WariController::bloquerPartenaie'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/ajout']], [], []],
     'comptB' => [[], ['_controller' => 'App\\Controller\\WariController::ajoutComptB'], [], [['text', '/api/comptB']], [], []],
     'api_entrypoint' => [['index', '_format'], ['_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index' => 'index'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', 'index', 'index', true], ['text', '/api']], [], []],

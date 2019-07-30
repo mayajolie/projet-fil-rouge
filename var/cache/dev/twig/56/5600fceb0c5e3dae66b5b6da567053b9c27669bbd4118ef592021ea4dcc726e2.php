@@ -57,10 +57,6 @@ class __TwigTemplate_9a7c8824b23b1998d921dec993eb7633c4129ab0e081dc4d616cfaa5c77
     public function getSourceContext()
     {
         return new Source("<input type=\"<?php echo isset(\$type) ? \$view->escape(\$type) : 'text' ?>\" <?php echo \$view['form']->block(\$form, 'widget_attributes') ?><?php if (!empty(\$value) || is_numeric(\$value)): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?> />
-<<<<<<< HEAD:var/cache/dev/twig/56/5600fceb0c5e3dae66b5b6da567053b9c27669bbd4118ef592021ea4dcc726e2.php
 ", "@Framework/Form/form_widget_simple.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_simple.html.php");
-=======
-", "@Framework/Form/form_widget_simple.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_simple.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/a2/a221c5863cf2ea086037554518beb54f10b92866d7883bdbc453ff98a974eb5e.php
     }
 }

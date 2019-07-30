@@ -53,10 +53,6 @@ class __TwigTemplate_fe9773627343251d9c78693ed3a3c0dd9c655f2cf0a32efc198524d3640
 
     public function getSourceContext()
     {
-<<<<<<< HEAD:var/cache/dev/twig/7e/7e498ff56b42e499d047f15a3a0558fc54b5e71ef459b4b243ec484fb91365bb.php
         return new Source("", "@Framework/Form/button_label.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
-=======
-        return new Source("", "@Framework/Form/button_label.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/45/457217633089c28877f0cd69bc8e084012e96cb07a0001262b9311ac3f11be4e.php
     }
 }

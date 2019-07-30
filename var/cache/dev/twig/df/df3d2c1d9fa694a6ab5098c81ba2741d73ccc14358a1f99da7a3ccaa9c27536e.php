@@ -67,10 +67,6 @@ class __TwigTemplate_2c6b204a7c03c2ce732b668cc07b4c4a61e5ffe033dbfa3b6b08a060e15
     <?php echo \$view['form']->label(\$child, null, ['translation_domain' => \$choice_translation_domain]) ?>
 <?php endforeach ?>
 </div>
-<<<<<<< HEAD:var/cache/dev/twig/df/df3d2c1d9fa694a6ab5098c81ba2741d73ccc14358a1f99da7a3ccaa9c27536e.php
 ", "@Framework/Form/choice_widget_expanded.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
-=======
-", "@Framework/Form/choice_widget_expanded.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/68/684dc2503698e7097a88c516fcb0b671329a7cf62fe9949c3b29d6bbdfa53dd0.php
     }
 }

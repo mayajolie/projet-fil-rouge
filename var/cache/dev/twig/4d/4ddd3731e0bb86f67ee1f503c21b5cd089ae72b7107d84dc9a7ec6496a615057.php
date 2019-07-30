@@ -136,10 +136,6 @@ class __TwigTemplate_47b3c5b9f91e1df71ea5b8612294abbcf3e3c8343931d505c272f3b1794
     </ul>
 </div>
 {% endblock %}
-<<<<<<< HEAD:var/cache/dev/twig/4d/4ddd3731e0bb86f67ee1f503c21b5cd089ae72b7107d84dc9a7ec6496a615057.php
 ", "security/index.html.twig", "/home/cheikhgaye/projet-fil-rouge/templates/security/index.html.twig");
-=======
-", "security/index.html.twig", "/home/mariama/projetwari/templates/security/index.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/01/0104b8e8061149551395fd980d46cf548681bfc79d1ad8800f058e845c16f382.php
     }
 }

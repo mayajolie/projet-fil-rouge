@@ -69,10 +69,6 @@ class __TwigTemplate_0474f08092168234df6977bbe0c88345ce61bb38d542fb2792d391077a9
         <?php echo \$view['form']->widget(\$form['date']).' '.\$view['form']->widget(\$form['time']) ?>
     </div>
 <?php endif ?>
-<<<<<<< HEAD:var/cache/dev/twig/0d/0d6ec9380052c85d97d2e680874524e6426a7955d610fba7cf03d9b011d93b3d.php
 ", "@Framework/Form/datetime_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/datetime_widget.html.php");
-=======
-", "@Framework/Form/datetime_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/datetime_widget.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/d7/d7bd4fc8c498d12fb29e8652ae45e0d96739aaa2c53fcd2a27a64ec9f6d41337.php
     }
 }

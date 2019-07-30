@@ -81,10 +81,6 @@ class __TwigTemplate_f95ae3e74eceb5a73c3c940d31921f7ec4b19794063b78ef3dbe9a844b6
         <option value=\"<?php echo \$view->escape(\$choice->value) ?>\" <?php echo \$formHelper->block(\$form, 'choice_attributes', ['choice_attr' => \$choice->attr]) ?><?php if (\$is_selected(\$choice->value, \$value)): ?> selected=\"selected\"<?php endif?>><?php echo \$view->escape(false !== \$choice_translation_domain ? \$translatorHelper->trans(\$choice->label, [], \$choice_translation_domain) : \$choice->label) ?></option>
     <?php endif ?>
 <?php endforeach ?>
-<<<<<<< HEAD:var/cache/dev/twig/7f/7f5c7df902c4e9793c85d2e683b7376bfad841416a2f6057e5be2d2312824716.php
 ", "@Framework/Form/choice_widget_options.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
-=======
-", "@Framework/Form/choice_widget_options.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/18/18a503263d9cd02a51d224b62df3341aae197e94a75c954a3ecde94b785aaa24.php
     }
 }

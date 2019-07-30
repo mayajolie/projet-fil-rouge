@@ -143,10 +143,6 @@ class __TwigTemplate_5ea4f15ab37d88ec86887568cb55c5a838c7805ea4acba8c916cf471705
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-<<<<<<< HEAD:var/cache/dev/twig/79/796d4e1cda28b9151e2b28b9ce16e40e49edfcb02ad449e3b27b69e1869c97b6.php
 ", "base.html.twig", "/home/cheikhgaye/projet-fil-rouge/templates/base.html.twig");
-=======
-", "base.html.twig", "/home/mariama/projetwari/templates/base.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/20/20a778a38110f3f4d50c75b0249cc5b26750c255984c9cfc7ef7121cac242ffa.php
     }
 }

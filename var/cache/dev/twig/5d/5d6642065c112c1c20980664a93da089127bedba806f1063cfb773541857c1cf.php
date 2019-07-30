@@ -79,10 +79,6 @@ The server returned a \"{{ status_code }} {{ status_text }}\".
 
 Something is broken. Please let us know what you were doing when this error occurred.
 We will fix it as soon as possible. Sorry for any inconvenience caused.
-<<<<<<< HEAD:var/cache/dev/twig/5d/5d6642065c112c1c20980664a93da089127bedba806f1063cfb773541857c1cf.php
 ", "@Twig/Exception/error.txt.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.txt.twig");
-=======
-", "@Twig/Exception/error.txt.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/error.txt.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/3a/3ade4362983304ae991ab9ae231549730bef4852c9aca42e989893deeb58ec4b.php
     }
 }

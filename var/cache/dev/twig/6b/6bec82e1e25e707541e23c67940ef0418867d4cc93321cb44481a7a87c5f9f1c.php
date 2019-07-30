@@ -89,10 +89,6 @@ class __TwigTemplate_04c13a575d76ecb702fc0bc7dda57c4c818c4687fd26b19dd17fe7364d1
             </trace>
 {% endfor %}
         </traces>
-<<<<<<< HEAD:var/cache/dev/twig/6b/6bec82e1e25e707541e23c67940ef0418867d4cc93321cb44481a7a87c5f9f1c.php
 ", "@Twig/Exception/traces.xml.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
-=======
-", "@Twig/Exception/traces.xml.twig", "/home/mariama/projetwari/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/57/57135b0793749db3b6b93cfac6fba7c33b4a92223622b2f1a305038cf5aa73bf.php
     }
 }

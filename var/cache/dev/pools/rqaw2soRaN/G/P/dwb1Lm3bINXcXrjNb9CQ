@@ -8,7 +8,7 @@
         [
             'stdClass' => [
                 'type' => [
-                    'datetime',
+                    'date',
                 ],
             ],
         ],

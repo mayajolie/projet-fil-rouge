@@ -57,10 +57,6 @@ class __TwigTemplate_e427d0fd41709ebc8b9c076ba799a79c6614e212f090b7b4318689347c4
     public function getSourceContext()
     {
         return new Source("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"#AAA\" d=\"M21 20.4V22H3v-1.6c0-3.7 2.4-6.9 5.8-8-1.7-1.1-2.9-3-2.9-5.2 0-3.4 2.7-6.1 6.1-6.1s6.1 2.7 6.1 6.1c0 2.2-1.2 4.1-2.9 5.2 3.4 1.1 5.8 4.3 5.8 8z\"/></svg>
-<<<<<<< HEAD:var/cache/dev/twig/e1/e14b44c5140ae46f7cec6c79a6e793ff1ddd3919d445e8a56cffc63e3dc18f66.php
 ", "@Security/Collector/icon.svg", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/security-bundle/Resources/views/Collector/icon.svg");
-=======
-", "@Security/Collector/icon.svg", "/home/mariama/projetwari/vendor/symfony/security-bundle/Resources/views/Collector/icon.svg");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/43/4349f84e5478b342d4d558bfe028a3997495e44a2883c230b04ab1ea0dcc0564.php
     }
 }

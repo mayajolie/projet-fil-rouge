@@ -57,10 +57,6 @@ class __TwigTemplate_224a41a776a94da2f3741ba053a48d27d2ebaa48a791da396ecf6484dbc
     public function getSourceContext()
     {
         return new Source("<textarea <?php echo \$view['form']->block(\$form, 'widget_attributes') ?>><?php echo \$view->escape(\$value) ?></textarea>
-<<<<<<< HEAD:var/cache/dev/twig/b5/b5846cea38729f0e166bf85fb428fbb4badc1f5a85d0cb3e725dfcaa75640d6f.php
 ", "@Framework/Form/textarea_widget.html.php", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/framework-bundle/Resources/views/Form/textarea_widget.html.php");
-=======
-", "@Framework/Form/textarea_widget.html.php", "/home/mariama/projetwari/vendor/symfony/framework-bundle/Resources/views/Form/textarea_widget.html.php");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/15/15adff3776dc344e8104477574ba369fa23406371ed8dcd7577fe79e222ff060.php
     }
 }

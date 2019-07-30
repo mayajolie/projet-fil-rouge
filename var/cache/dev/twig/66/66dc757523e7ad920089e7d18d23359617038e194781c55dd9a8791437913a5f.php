@@ -236,10 +236,6 @@ class __TwigTemplate_2fc466988dd6ced187019d5f314f9ceff6bbe9b3da1d28465dcfc32a90c
         {{- form_rest(form) -}}
     </table>
 {%- endblock form_widget_compound -%}
-<<<<<<< HEAD:var/cache/dev/twig/66/66dc757523e7ad920089e7d18d23359617038e194781c55dd9a8791437913a5f.php
 ", "form_table_layout.html.twig", "/home/cheikhgaye/projet-fil-rouge/vendor/symfony/twig-bridge/Resources/views/Form/form_table_layout.html.twig");
-=======
-", "form_table_layout.html.twig", "/home/mariama/projetwari/vendor/symfony/twig-bridge/Resources/views/Form/form_table_layout.html.twig");
->>>>>>> f3f1a1a76f549d23fbb8bea994002bfeb91b81df:var/cache/dev/twig/2b/2b66574833d10d91b7e1efda4ee38c167524bacb7c2ef801e03931d0c7dd6e79.php
     }
 }
