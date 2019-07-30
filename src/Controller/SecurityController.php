@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
+use App\Entity\Partenaires;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +19,7 @@ class SecurityController extends AbstractController
 {
     /**
      * @Route("/register", name="register", methods={"POST"})
-     *  @
+     * @IsGranted("ROLE_ADMIN_PART")
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, SerializerInterface $serializer, EntityManagerInterface $entityManager)
     {
@@ -34,6 +35,9 @@ class SecurityController extends AbstractController
             $user->setTelephone($values->telephone);
             $user->setEmail($values->email);
             $user->setEtat($values->etat);
+            $repo = $this->getDoctrine()->getRepository(Partenaires::class);
+            $partenaire = $repo->find($values->id_partenaire);
+            $user->setIdPartenaire($partenaire);
 
             $entityManager->persist($user);
             $entityManager->flush();
