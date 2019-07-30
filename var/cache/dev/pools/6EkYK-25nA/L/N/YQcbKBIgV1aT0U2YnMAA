@@ -16,6 +16,7 @@
                         'telephone',
                         'compteBancaires',
                         'etat',
+                        'users',
                     ],
                 ],
             ],

@@ -67,6 +67,11 @@ class User implements UserInterface
      */
     private $etat;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Partenaires", inversedBy="users")
+     */
+    private $id_partenaire;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -208,6 +213,18 @@ class User implements UserInterface
     public function setEtat(string $etat): self
     {
         $this->etat = $etat;
+
+        return $this;
+    }
+
+    public function getIdPartenaire(): ?Partenaires
+    {
+        return $this->id_partenaire;
+    }
+
+    public function setIdPartenaire(?Partenaires $id_partenaire): self
+    {
+        $this->id_partenaire = $id_partenaire;
 
         return $this;
     }

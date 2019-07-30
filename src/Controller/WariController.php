@@ -22,6 +22,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Validator\Constraints\DateTime;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/api")
@@ -30,6 +31,7 @@ class WariController extends FOSRestController
 {
     /**
      * @Rest\Get("/partenaires", name="find_partenaires")
+      * @IsGranted("ROLE_SUPER_ADMIN")
      */
     public function index()
     {
@@ -39,9 +41,10 @@ class WariController extends FOSRestController
         return $this->handleView($this->view($partenaire));
 
             }
-      /**
+    /**
      * @Route("/ajout", name="ajout", methods={"POST"})
-     */
+     * @IsGranted("ROLE_SUPER_ADMIN")
+    */
         public function AjoutP(Request $request, SerializerInterface $serializer, EntityManagerInterface $entityManager)
         {
           $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json'); 
@@ -57,14 +60,15 @@ class WariController extends FOSRestController
             return new JsonResponse($data, 201);
         
         $data =[
-            'status' => 500,
+            'statu' => 500,
             'message' => 'Vous devez renseigner les clés username et password'
         ];
         return new JsonResponse($data, 500);
     }
     /**
      * @Route("/ajout/{id}", name="bloquer", methods={"PUT"})
-     */
+     *  @IsGranted("ROLE_SUPER_ADMIN")
+     */     
     public function bloquerPartenaie(Request $request, SerializerInterface $serializer, Partenaires $partenaire, ValidatorInterface $validator, EntityManagerInterface $entityManager)
     {
         $bloqueP = $entityManager->getRepository(Partenaires::class)->find($partenaire->getId());
@@ -93,6 +97,8 @@ class WariController extends FOSRestController
 
     /**
      * @Route("/comptB", name="comptB", methods={"POST"})
+     * * @IsGranted("ROLE_SUPER_ADMIN")
+
      */
     public function ajoutComptB(Request $request)
     {
@@ -112,6 +118,7 @@ class WariController extends FOSRestController
 
         /**
      * @Route("/depot", name="depot", methods={"POST"})
+     * @IsGranted("ROLE_SUPER_ADMIN")
      */
     public function Depot (Request $request,  EntityManagerInterface $entityManager)
     {

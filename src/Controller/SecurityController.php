@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
+use App\Entity\Partenaires;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,6 +13,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/api")
@@ -22,7 +24,7 @@ class SecurityController extends AbstractController
     
     /**
      * @Route("/register", name="register", methods={"POST"})
-     *  @
+     * @IsGranted("ROLE_ADMIN_PART")
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder,SerializerInterface $serializer, EntityManagerInterface $entityManager)
     {
@@ -31,13 +33,16 @@ class SecurityController extends AbstractController
             $user = new User();
             $user->setUsername($values->username);
             $user->setPassword($passwordEncoder->encodePassword($user, $values->password));
-            $user->setRoles(['ROLE_ADMIN_PART']);
+            $user->setRoles(['ROLE_USER']);
             $user->setNom($values->nom);
             $user->setPrenom($values->prenom);
             $user->setTelephone($values->telephone);
             $user->setAdresse($values->adresse);
             $user->setEmail($values->email);
             $user->setEtat($values->etat);
+            $repo=$this->getDoctrine()->getRepository(Partenaires::class);
+            $partenaire=$repo->find($values->id_partenaire);
+            $user->setIdPartenaire($partenaire);
 
 
             $entityManager->persist($user);
