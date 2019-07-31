@@ -7,6 +7,7 @@ use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Partenaires;
+use App\Entity\Depot;
 use App\Entity\CompteBancaire;
 use App\Form\ComptBType;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -39,10 +40,6 @@ class WariController extends FOSRestController
      */
     public function AjoutP(Request $request, SerializerInterface $serializer, EntityManagerInterface $entityManager)
     {
-        $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
-        $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
-        $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
-        $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
         $partenaire = $serializer->deserialize($request->getContent(), Partenaires::class, 'json');
         $entityManager->persist($partenaire);
         $entityManager->flush();
@@ -95,15 +92,26 @@ class WariController extends FOSRestController
     }
 
     /**
-     * @Route("/comptB", name="comptB", methods={"POST"})
+     * @Route("/comptB", name="compt", methods={"POST"})
      * @IsGranted("ROLE_SUPER_ADMIN")
      */
-    public function ajoutComptB(Request $request)
+    public function ajoutComptB(Request $request,EntityManagerInterface $entityManager)
     {
         $compb = new CompteBancaire();
         $form = $this->createform(ComptBType::class, $compb);
         $data = json_decode($request->getContent(), true);
         $form->submit($data);
+        //enregistrement au niveau du depot
+        $entityManager->persist($compb);
+        $entityManager->flush();
+        $data = [
+            'status' => 201,
+            'message' => 'Le compte bancaire  a été bien créer ',
+        ];
+
+        return new JsonResponse($data, 201);
+    
+
     }
 
     /**
