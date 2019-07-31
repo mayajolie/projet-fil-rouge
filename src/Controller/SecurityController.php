@@ -29,7 +29,7 @@ class SecurityController extends AbstractController
             $user = new User();
             $user->setUsername($values->username);
             $user->setPassword($passwordEncoder->encodePassword($user, $values->password));
-            $user->setRoles(['ROLE_SUPER_ADMIN']);
+            $user->setRoles(['ROLE_ADMIN_PART']);
             $user->setNom($values->nom);
             $user->setPrenom($values->prenom);
             $user->setAdresse($values->adresse);

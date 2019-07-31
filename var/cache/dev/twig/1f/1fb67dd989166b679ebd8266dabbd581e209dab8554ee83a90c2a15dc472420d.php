@@ -136,6 +136,6 @@ class __TwigTemplate_961e98c49fbc1cb6153fcb5da254337f70b6d2b3c6c3a73985dc3b3e90f
     </ul>
 </div>
 {% endblock %}
-", "wari/index.html.twig", "/home/mariama/projetwari/templates/wari/index.html.twig");
+", "wari/index.html.twig", "/home/mariama/Documents/test/templates/wari/index.html.twig");
     }
 }

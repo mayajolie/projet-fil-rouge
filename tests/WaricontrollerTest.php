@@ -54,7 +54,7 @@ class WaricontrollerTest extends WebTestCase
         );
         $crawler = $client->request('POST', '/api/comptB',[],[],
         ['CONTENT_TYPE' => 'application/json'],
-        '{"numeroCompte":"122100042","solde": 10000,"partenaire": "3"}');
+        '{"numeroCompte":"122100042","solde": 10000,"partenaire": "1"}');
         $rep = $client->getResponse();
         var_dump($rep);
         $this->assertSame(201, $client->getResponse()->getStatusCode());
@@ -82,7 +82,7 @@ class WaricontrollerTest extends WebTestCase
         );
         $crawler = $client->request('POST', '/api/depot',[],[],
         ['CONTENT_TYPE' => 'application/json'],
-        '{"montant":50000,"dateDepot": "","comptb": "2"}');
+        '{"montant":50000,"dateDepot": "","comptb": "1"}');
         $rep = $client->getResponse();
         var_dump($rep);
         $this->assertSame(201, $client->getResponse()->getStatusCode());
